@@ -39,7 +39,7 @@ class SaturnusController: UIViewController, ARSCNViewDelegate {
         
         // Deklarasi Properti Ring Planet Saturnus
         let saturnusRingMaterial = SCNMaterial()
-        saturnusRingMaterial.diffuse.contents = UIImage(named: "textures.scnassets/saturnring.jpg")
+        saturnusRingMaterial.diffuse.contents = UIImage(named: "textures.scnassets/saturn.jpg")
         
         SaturnusRingTube.materials = [saturnusRingMaterial]
 
