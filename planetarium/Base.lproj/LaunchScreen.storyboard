@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,41 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MWd-fx-x5X">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earthLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JX7-tI-5wH">
+                                <rect key="frame" x="0.0" y="173" width="320" height="222"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MWd-fx-x5X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0pb-BH-mct"/>
+                            <constraint firstItem="MWd-fx-x5X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Cd-0y-Muu"/>
+                            <constraint firstItem="JX7-tI-5wH" firstAttribute="centerY" secondItem="MWd-fx-x5X" secondAttribute="centerY" id="Drk-nE-9dp"/>
+                            <constraint firstItem="JX7-tI-5wH" firstAttribute="trailing" secondItem="MWd-fx-x5X" secondAttribute="trailing" id="Luk-c5-H2x"/>
+                            <constraint firstItem="MWd-fx-x5X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RmC-5y-RrB"/>
+                            <constraint firstItem="MWd-fx-x5X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S5M-8z-HQD"/>
+                            <constraint firstItem="JX7-tI-5wH" firstAttribute="leading" secondItem="MWd-fx-x5X" secondAttribute="leading" id="bDs-Lp-AZ8"/>
+                            <constraint firstItem="MWd-fx-x5X" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dhB-54-rEN"/>
+                            <constraint firstItem="MWd-fx-x5X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gRJ-PN-prG"/>
+                            <constraint firstItem="MWd-fx-x5X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="i2Z-Ny-PS4"/>
+                            <constraint firstItem="MWd-fx-x5X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xfa-MH-R5R"/>
+                            <constraint firstItem="JX7-tI-5wH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="zzQ-40-h2e"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="640" height="1136"/>
+        <image name="earthLogo" width="400" height="400"/>
+    </resources>
 </document>

@@ -7,25 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F17FCA624C712BB008D39A1 /* PlaneDetectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17FCA524C712BB008D39A1 /* PlaneDetectionController.swift */; };
 		9F4A36D324BC1027007B5C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36D224BC1027007B5C22 /* AppDelegate.swift */; };
 		9F4A36D524BC1028007B5C22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36D424BC1028007B5C22 /* SceneDelegate.swift */; };
-		9F4A36D724BC1028007B5C22 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36D624BC1028007B5C22 /* FirstViewController.swift */; };
-		9F4A36D924BC1028007B5C22 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36D824BC1028007B5C22 /* SecondViewController.swift */; };
+		9F4A36D724BC1028007B5C22 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36D624BC1028007B5C22 /* AboutController.swift */; };
 		9F4A36DC24BC1028007B5C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A36DA24BC1028007B5C22 /* Main.storyboard */; };
 		9F4A36DE24BC102C007B5C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A36DD24BC102C007B5C22 /* Assets.xcassets */; };
 		9F4A36E124BC102D007B5C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A36DF24BC102D007B5C22 /* LaunchScreen.storyboard */; };
+		9F4A36E924BC1270007B5C22 /* MatahariController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36E824BC1270007B5C22 /* MatahariController.swift */; };
+		9F4A36EB24BC1543007B5C22 /* ARMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36EA24BC1543007B5C22 /* ARMenuController.swift */; };
+		9F4A36ED24BC186E007B5C22 /* MerkuriusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36EC24BC186E007B5C22 /* MerkuriusController.swift */; };
+		9F4A36EF24BC1881007B5C22 /* VenusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36EE24BC1881007B5C22 /* VenusController.swift */; };
+		9F4A36F124BC1894007B5C22 /* BumiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36F024BC1894007B5C22 /* BumiController.swift */; };
+		9F4A36F324BC18C1007B5C22 /* MarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36F224BC18C1007B5C22 /* MarsController.swift */; };
+		9F4A36F524BC18CF007B5C22 /* JupiterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36F424BC18CF007B5C22 /* JupiterController.swift */; };
+		9F4A36F724BC18DE007B5C22 /* SaturnusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36F624BC18DE007B5C22 /* SaturnusController.swift */; };
+		9F4A36F924BC18EB007B5C22 /* UranusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36F824BC18EB007B5C22 /* UranusController.swift */; };
+		9F4A36FB24BC18F9007B5C22 /* NeptunusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36FA24BC18F9007B5C22 /* NeptunusController.swift */; };
+		9F97606124BCB2E700023480 /* textures.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F97606024BCB2E700023480 /* textures.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F17FCA524C712BB008D39A1 /* PlaneDetectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionController.swift; sourceTree = "<group>"; };
 		9F4A36CF24BC1027007B5C22 /* planetarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = planetarium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4A36D224BC1027007B5C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4A36D424BC1028007B5C22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F4A36D624BC1028007B5C22 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9F4A36D824BC1028007B5C22 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9F4A36D624BC1028007B5C22 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		9F4A36DB24BC1028007B5C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4A36DD24BC102C007B5C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4A36E024BC102D007B5C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4A36E224BC102D007B5C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4A36E824BC1270007B5C22 /* MatahariController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatahariController.swift; sourceTree = "<group>"; };
+		9F4A36EA24BC1543007B5C22 /* ARMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMenuController.swift; sourceTree = "<group>"; };
+		9F4A36EC24BC186E007B5C22 /* MerkuriusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerkuriusController.swift; sourceTree = "<group>"; };
+		9F4A36EE24BC1881007B5C22 /* VenusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenusController.swift; sourceTree = "<group>"; };
+		9F4A36F024BC1894007B5C22 /* BumiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumiController.swift; sourceTree = "<group>"; };
+		9F4A36F224BC18C1007B5C22 /* MarsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsController.swift; sourceTree = "<group>"; };
+		9F4A36F424BC18CF007B5C22 /* JupiterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JupiterController.swift; sourceTree = "<group>"; };
+		9F4A36F624BC18DE007B5C22 /* SaturnusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturnusController.swift; sourceTree = "<group>"; };
+		9F4A36F824BC18EB007B5C22 /* UranusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UranusController.swift; sourceTree = "<group>"; };
+		9F4A36FA24BC18F9007B5C22 /* NeptunusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptunusController.swift; sourceTree = "<group>"; };
+		9F97606024BCB2E700023480 /* textures.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = textures.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +80,51 @@
 		9F4A36D124BC1027007B5C22 /* planetarium */ = {
 			isa = PBXGroup;
 			children = (
-				9F4A36D224BC1027007B5C22 /* AppDelegate.swift */,
-				9F4A36D424BC1028007B5C22 /* SceneDelegate.swift */,
-				9F4A36D624BC1028007B5C22 /* FirstViewController.swift */,
-				9F4A36D824BC1028007B5C22 /* SecondViewController.swift */,
-				9F4A36DA24BC1028007B5C22 /* Main.storyboard */,
+				9F97606024BCB2E700023480 /* textures.scnassets */,
 				9F4A36DD24BC102C007B5C22 /* Assets.xcassets */,
 				9F4A36DF24BC102D007B5C22 /* LaunchScreen.storyboard */,
+				9F4A36DA24BC1028007B5C22 /* Main.storyboard */,
+				9F97605624BC9EC800023480 /* delegates */,
+				9F97605824BC9F1900023480 /* navigation */,
+				9F97605724BC9EE900023480 /* planetAR */,
 				9F4A36E224BC102D007B5C22 /* Info.plist */,
 			);
 			path = planetarium;
+			sourceTree = "<group>";
+		};
+		9F97605624BC9EC800023480 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9F4A36D224BC1027007B5C22 /* AppDelegate.swift */,
+				9F4A36D424BC1028007B5C22 /* SceneDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		9F97605724BC9EE900023480 /* planetAR */ = {
+			isa = PBXGroup;
+			children = (
+				9F17FCA524C712BB008D39A1 /* PlaneDetectionController.swift */,
+				9F4A36E824BC1270007B5C22 /* MatahariController.swift */,
+				9F4A36EC24BC186E007B5C22 /* MerkuriusController.swift */,
+				9F4A36EE24BC1881007B5C22 /* VenusController.swift */,
+				9F4A36F024BC1894007B5C22 /* BumiController.swift */,
+				9F4A36F224BC18C1007B5C22 /* MarsController.swift */,
+				9F4A36F424BC18CF007B5C22 /* JupiterController.swift */,
+				9F4A36F624BC18DE007B5C22 /* SaturnusController.swift */,
+				9F4A36F824BC18EB007B5C22 /* UranusController.swift */,
+				9F4A36FA24BC18F9007B5C22 /* NeptunusController.swift */,
+			);
+			path = planetAR;
+			sourceTree = "<group>";
+		};
+		9F97605824BC9F1900023480 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9F4A36D624BC1028007B5C22 /* AboutController.swift */,
+				9F4A36EA24BC1543007B5C22 /* ARMenuController.swift */,
+			);
+			path = navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F97606124BCB2E700023480 /* textures.scnassets in Resources */,
 				9F4A36E124BC102D007B5C22 /* LaunchScreen.storyboard in Resources */,
 				9F4A36DE24BC102C007B5C22 /* Assets.xcassets in Resources */,
 				9F4A36DC24BC1028007B5C22 /* Main.storyboard in Resources */,
@@ -141,8 +199,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4A36D924BC1028007B5C22 /* SecondViewController.swift in Sources */,
-				9F4A36D724BC1028007B5C22 /* FirstViewController.swift in Sources */,
+				9F4A36FB24BC18F9007B5C22 /* NeptunusController.swift in Sources */,
+				9F4A36F124BC1894007B5C22 /* BumiController.swift in Sources */,
+				9F4A36E924BC1270007B5C22 /* MatahariController.swift in Sources */,
+				9F4A36ED24BC186E007B5C22 /* MerkuriusController.swift in Sources */,
+				9F17FCA624C712BB008D39A1 /* PlaneDetectionController.swift in Sources */,
+				9F4A36F924BC18EB007B5C22 /* UranusController.swift in Sources */,
+				9F4A36EB24BC1543007B5C22 /* ARMenuController.swift in Sources */,
+				9F4A36D724BC1028007B5C22 /* AboutController.swift in Sources */,
+				9F4A36F524BC18CF007B5C22 /* JupiterController.swift in Sources */,
+				9F4A36F324BC18C1007B5C22 /* MarsController.swift in Sources */,
+				9F4A36F724BC18DE007B5C22 /* SaturnusController.swift in Sources */,
+				9F4A36EF24BC1881007B5C22 /* VenusController.swift in Sources */,
 				9F4A36D324BC1027007B5C22 /* AppDelegate.swift in Sources */,
 				9F4A36D524BC1028007B5C22 /* SceneDelegate.swift in Sources */,
 			);

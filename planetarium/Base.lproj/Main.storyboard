@@ -1,80 +1,602 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--About-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="AboutController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-hB-5h2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="planetARium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRQ-3q-WXu">
+                                <rect key="frame" x="76" y="291" width="168" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="wGA-Bc-Osl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Altela Eleviansyah Pramardhika" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-Mt-yKr">
+                                <rect key="frame" x="22" y="338" width="276" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="qKo-oc-Wgy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLt-Q7-IT8">
+                                <rect key="frame" x="76" y="430" width="57" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="0qj-UB-vPd"/>
+                                </constraints>
+                                <state key="normal" title="planeDetectionButton" image="floor"/>
+                                <connections>
+                                    <action selector="toPlaneDetectionAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ALs-gA-dVz"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earthLogo" translatesAutoresizingMaskIntoConstraints="NO" id="O3j-yr-ndv">
+                                <rect key="frame" x="35" y="48" width="250" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Detection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aub-Me-LWT">
+                                <rect key="frame" x="54" y="475" width="106" height="22"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exit App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S79-d2-64H">
+                                <rect key="frame" x="188" y="475" width="57" height="22"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViI-zw-EEp">
+                                <rect key="frame" x="189" y="423" width="55" height="46"/>
+                                <state key="normal" title="exit" image="exit"/>
+                                <connections>
+                                    <action selector="toExitAction:" destination="uIL-xq-d6p" eventType="touchUpInside" id="7aU-eV-T0z"/>
+                                    <action selector="toExitAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ucy-i4-05B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 0.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-0j-3kY">
+                                <rect key="frame" x="108" y="372" width="104" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="AhL-C6-HH6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstAttribute="bottom" secondItem="3aS-hB-5h2" secondAttribute="bottom" constant="20" id="2Qj-lZ-0bf"/>
+                            <constraint firstItem="GRQ-3q-WXu" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="76" id="7P2-is-3Vt"/>
+                            <constraint firstItem="3aS-hB-5h2" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="A01-RS-MCN"/>
+                            <constraint firstItem="Aub-Me-LWT" firstAttribute="top" secondItem="oLt-Q7-IT8" secondAttribute="bottom" constant="8" id="AKQ-eK-7zf"/>
+                            <constraint firstItem="oLt-Q7-IT8" firstAttribute="top" secondItem="1S7-0j-3kY" secondAttribute="bottom" constant="32" id="Abf-sD-dzU"/>
+                            <constraint firstItem="Ofj-Mt-yKr" firstAttribute="centerX" secondItem="1S7-0j-3kY" secondAttribute="centerX" id="Bj3-cF-kHf"/>
+                            <constraint firstItem="GRQ-3q-WXu" firstAttribute="centerX" secondItem="Ofj-Mt-yKr" secondAttribute="centerX" id="CII-gB-NZj"/>
+                            <constraint firstItem="Ofj-Mt-yKr" firstAttribute="top" secondItem="GRQ-3q-WXu" secondAttribute="bottom" constant="4" id="Cgh-2s-rwQ"/>
+                            <constraint firstItem="1S7-0j-3kY" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="108" id="JTf-Wv-ud3"/>
+                            <constraint firstItem="O3j-yr-ndv" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="48" id="Lb3-Ej-yJO"/>
+                            <constraint firstItem="S79-d2-64H" firstAttribute="top" secondItem="ViI-zw-EEp" secondAttribute="bottom" constant="6" id="QMd-23-i1a"/>
+                            <constraint firstItem="ViI-zw-EEp" firstAttribute="centerX" secondItem="S79-d2-64H" secondAttribute="centerX" id="RVQ-Xg-Ut5"/>
+                            <constraint firstItem="GRQ-3q-WXu" firstAttribute="centerX" secondItem="O3j-yr-ndv" secondAttribute="centerX" id="SAd-6k-zzn"/>
+                            <constraint firstItem="Aub-Me-LWT" firstAttribute="baseline" secondItem="S79-d2-64H" secondAttribute="baseline" id="T9b-W4-G3q"/>
+                            <constraint firstItem="GRQ-3q-WXu" firstAttribute="top" secondItem="O3j-yr-ndv" secondAttribute="bottom" constant="8" id="UdL-UJ-LeM"/>
+                            <constraint firstItem="ViI-zw-EEp" firstAttribute="leading" secondItem="oLt-Q7-IT8" secondAttribute="trailing" constant="56" id="Z3x-zn-kc6"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Aub-Me-LWT" secondAttribute="bottom" constant="22" id="eUB-sc-uv5"/>
+                            <constraint firstItem="S79-d2-64H" firstAttribute="leading" secondItem="Aub-Me-LWT" secondAttribute="trailing" constant="28" id="gam-UF-4U6"/>
+                            <constraint firstItem="O3j-yr-ndv" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="48" id="hV3-8B-LIC"/>
+                            <constraint firstItem="3aS-hB-5h2" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="iQs-a4-bFf"/>
+                            <constraint firstItem="Aub-Me-LWT" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="54" id="jNs-dT-4Xt"/>
+                            <constraint firstItem="Aub-Me-LWT" firstAttribute="firstBaseline" secondItem="S79-d2-64H" secondAttribute="firstBaseline" id="jjM-Tc-mMM"/>
+                            <constraint firstItem="1S7-0j-3kY" firstAttribute="top" secondItem="Ofj-Mt-yKr" secondAttribute="bottom" constant="8" id="nJc-b5-JDR"/>
+                            <constraint firstItem="3aS-hB-5h2" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="oPu-sF-e7h"/>
+                            <constraint firstItem="GRQ-3q-WXu" firstAttribute="leading" secondItem="oLt-Q7-IT8" secondAttribute="leading" id="uvz-RH-HN4"/>
+                            <constraint firstItem="GRQ-3q-WXu" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ViI-zw-EEp" secondAttribute="trailing" id="wiR-Jc-IR1"/>
+                            <constraint firstItem="ViI-zw-EEp" firstAttribute="top" secondItem="1S7-0j-3kY" secondAttribute="bottom" constant="25" id="wqR-9i-I4B"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="O3j-yr-ndv" secondAttribute="trailing" constant="35" id="xXU-er-hqz"/>
+                            <constraint firstItem="O3j-yr-ndv" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="35" id="yhe-4j-8BG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="About" image="house" catalog="system" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="creatorApp" destination="Ofj-Mt-yKr" id="Jia-42-eNZ"/>
+                        <outlet property="logoApp" destination="O3j-yr-ndv" id="DF9-Ys-Uj3"/>
+                        <outlet property="namaApp" destination="GRQ-3q-WXu" id="HWN-Lx-lu4"/>
+                        <outlet property="toExit" destination="ViI-zw-EEp" id="yLu-NR-We8"/>
+                        <outlet property="toPlaneDetectionDemo" destination="oLt-Q7-IT8" id="KGs-d7-Ycr"/>
+                        <outlet property="versionApp" destination="1S7-0j-3kY" id="krK-iv-uOb"/>
+                        <segue destination="r8d-7v-6i7" kind="show" identifier="toPlaneDetectionSegue" id="Otl-Sl-IGV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <exit id="uIL-xq-d6p" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="526.875" y="394.01408450704224"/>
         </scene>
-        <!--Second-->
-        <scene sceneID="wg7-f3-ORb">
+        <!--Venus Controller-->
+        <scene sceneID="fme-Jr-EgL">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="uwd-ax-sZ2" customClass="VenusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qat-HL-dCd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otd-aU-L4U">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Otd-aU-L4U" firstAttribute="trailing" secondItem="JSD-Kx-i03" secondAttribute="trailing" id="Ajt-AO-qT2"/>
+                            <constraint firstItem="Otd-aU-L4U" firstAttribute="bottom" secondItem="JSD-Kx-i03" secondAttribute="bottom" id="dNP-M3-sM8"/>
+                            <constraint firstItem="Otd-aU-L4U" firstAttribute="top" secondItem="JSD-Kx-i03" secondAttribute="top" id="nmU-Iu-fZU"/>
+                            <constraint firstItem="Otd-aU-L4U" firstAttribute="leading" secondItem="JSD-Kx-i03" secondAttribute="leading" id="tBF-Fz-0Lg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JSD-Kx-i03"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s9s-5A-0T9"/>
+                    <connections>
+                        <outlet property="sceneVenus" destination="Otd-aU-L4U" id="4pq-Ls-yXm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6j-0y-rdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50.625" y="1460.9154929577464"/>
+        </scene>
+        <!--Bumi Controller-->
+        <scene sceneID="t82-hZ-Pq8">
+            <objects>
+                <viewController id="W23-aQ-urT" customClass="BumiController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgF-6Q-T0j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nc7-4K-GUj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nc7-4K-GUj" firstAttribute="leading" secondItem="ZqP-ts-WUH" secondAttribute="leading" id="178-95-YDc"/>
+                            <constraint firstItem="Nc7-4K-GUj" firstAttribute="bottom" secondItem="ZqP-ts-WUH" secondAttribute="bottom" id="Bta-c9-4RJ"/>
+                            <constraint firstItem="Nc7-4K-GUj" firstAttribute="trailing" secondItem="ZqP-ts-WUH" secondAttribute="trailing" id="eXy-yv-f3i"/>
+                            <constraint firstItem="Nc7-4K-GUj" firstAttribute="top" secondItem="ZqP-ts-WUH" secondAttribute="top" id="nyr-Ly-Rdt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZqP-ts-WUH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vt0-84-qfF"/>
+                    <connections>
+                        <outlet property="sceneBumi" destination="Nc7-4K-GUj" id="jzi-zN-ALb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tg2-bR-qcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624.375" y="1459.8591549295775"/>
+        </scene>
+        <!--Mars Controller-->
+        <scene sceneID="6wc-pV-8rF">
+            <objects>
+                <viewController id="Mu6-Gh-pjb" customClass="MarsController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wTO-p2-sq5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lr8-p3-qcH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lr8-p3-qcH" firstAttribute="top" secondItem="EOG-3V-2j2" secondAttribute="top" id="2Zd-ST-P6W"/>
+                            <constraint firstItem="Lr8-p3-qcH" firstAttribute="bottom" secondItem="EOG-3V-2j2" secondAttribute="bottom" id="NNK-W4-owE"/>
+                            <constraint firstItem="Lr8-p3-qcH" firstAttribute="leading" secondItem="EOG-3V-2j2" secondAttribute="leading" id="bfv-lq-r27"/>
+                            <constraint firstItem="Lr8-p3-qcH" firstAttribute="trailing" secondItem="EOG-3V-2j2" secondAttribute="trailing" id="cER-ei-5qJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EOG-3V-2j2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="11x-oA-uwu"/>
+                    <connections>
+                        <outlet property="sceneMars" destination="Lr8-p3-qcH" id="jQf-qH-EHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1p6-VU-aB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1327.5" y="1461.9718309859154"/>
+        </scene>
+        <!--Jupiter Controller-->
+        <scene sceneID="TjR-ef-qQt">
+            <objects>
+                <viewController id="1q9-Io-l2S" customClass="JupiterController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SnS-Nj-IMx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zno-5h-ZnU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zno-5h-ZnU" firstAttribute="bottom" secondItem="hjV-07-1JT" secondAttribute="bottom" id="Dkk-BN-Pri"/>
+                            <constraint firstItem="Zno-5h-ZnU" firstAttribute="trailing" secondItem="hjV-07-1JT" secondAttribute="trailing" id="JQ9-T7-rpy"/>
+                            <constraint firstItem="Zno-5h-ZnU" firstAttribute="top" secondItem="hjV-07-1JT" secondAttribute="top" id="QnV-cl-q5e"/>
+                            <constraint firstItem="Zno-5h-ZnU" firstAttribute="leading" secondItem="hjV-07-1JT" secondAttribute="leading" id="cPO-7q-aSg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hjV-07-1JT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zeU-53-WzR"/>
+                    <connections>
+                        <outlet property="sceneJupiter" destination="Zno-5h-ZnU" id="rNL-KO-l8t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6o-vn-sTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021.25" y="1458.8028169014085"/>
+        </scene>
+        <!--Uranus Controller-->
+        <scene sceneID="EL2-Kl-Zgt">
+            <objects>
+                <viewController id="KUd-Og-kcl" customClass="UranusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z5L-ab-B39">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EsK-ZX-NWS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hKc-o8-RTT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rj8-Nj-be3"/>
+                    <connections>
+                        <outlet property="sceneUranus" destination="EsK-ZX-NWS" id="1Zl-Z2-A2e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wq-4F-u6X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3390" y="1458.8028169014085"/>
+        </scene>
+        <!--Saturnus Controller-->
+        <scene sceneID="eEd-qz-jHD">
+            <objects>
+                <viewController id="0dx-51-khB" customClass="SaturnusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k29-M2-2Xq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAL-Rv-Zhp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DAL-Rv-Zhp" firstAttribute="bottom" secondItem="vEC-zL-Pmn" secondAttribute="bottom" id="jKN-2f-pOs"/>
+                            <constraint firstItem="DAL-Rv-Zhp" firstAttribute="trailing" secondItem="vEC-zL-Pmn" secondAttribute="trailing" id="sDL-ey-dqk"/>
+                            <constraint firstItem="DAL-Rv-Zhp" firstAttribute="leading" secondItem="vEC-zL-Pmn" secondAttribute="leading" id="tUJ-Om-zfy"/>
+                            <constraint firstItem="DAL-Rv-Zhp" firstAttribute="top" secondItem="vEC-zL-Pmn" secondAttribute="top" id="uV7-4Y-DJM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vEC-zL-Pmn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8xC-08-T0j"/>
+                    <connections>
+                        <outlet property="sceneSaturnus" destination="DAL-Rv-Zhp" id="XV6-BX-baY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmY-7d-pBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="1458.8028169014085"/>
+        </scene>
+        <!--Neptunus Controller-->
+        <scene sceneID="a7M-zy-Bua">
+            <objects>
+                <viewController id="2Th-T4-TWI" customClass="NeptunusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92c-xo-gTx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaZ-lb-zRr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JaZ-lb-zRr" firstAttribute="bottom" secondItem="ANC-cr-sbo" secondAttribute="bottom" id="Jk7-fn-oIj"/>
+                            <constraint firstItem="JaZ-lb-zRr" firstAttribute="top" secondItem="ANC-cr-sbo" secondAttribute="top" id="adP-hG-qlN"/>
+                            <constraint firstItem="JaZ-lb-zRr" firstAttribute="trailing" secondItem="ANC-cr-sbo" secondAttribute="trailing" id="hwN-GQ-bQ6"/>
+                            <constraint firstItem="JaZ-lb-zRr" firstAttribute="leading" secondItem="ANC-cr-sbo" secondAttribute="leading" id="n48-1C-ts0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ANC-cr-sbo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7FM-yf-yhE"/>
+                    <connections>
+                        <outlet property="sceneNeptunus" destination="JaZ-lb-zRr" id="m9G-H6-mZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RB8-g9-2P3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4089.375" y="1456.6901408450703"/>
+        </scene>
+        <!--AR Menu-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="ARMenuController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="c6S-Rc-szR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-rd-eVt">
+                                <rect key="frame" x="21" y="39" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="matahariButton" image="sun">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="toMatahariAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="24C-wZ-HTD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-hX-vFU">
+                                <rect key="frame" x="120" y="39" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="merkuriusButton" image="mercury"/>
+                                <connections>
+                                    <action selector="toMerkuriusAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="2J0-6o-Jan"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksi-0x-iSn">
+                                <rect key="frame" x="214" y="39" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="venusButton" image="venus"/>
+                                <connections>
+                                    <action selector="toVenusAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cmA-Dj-rLO"/>
+                                    <segue destination="uwd-ax-sZ2" kind="show" identifier="toVenusSegue" id="naJ-Xq-uoj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D98-42-f2e">
+                                <rect key="frame" x="21" y="207" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="bumiButton" image="bumi"/>
+                                <connections>
+                                    <action selector="toBumiAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="SVJ-jH-4Iz"/>
+                                    <segue destination="W23-aQ-urT" kind="show" identifier="toBumiSegue" id="dyV-M9-QiO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X0-1b-Bym">
+                                <rect key="frame" x="120" y="207" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="marsButton" image="mars"/>
+                                <connections>
+                                    <action selector="toMarsAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Hw7-uI-KZh"/>
+                                    <segue destination="Mu6-Gh-pjb" kind="show" identifier="toMarsSegue" id="O58-0u-YAo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-wo-pmh">
+                                <rect key="frame" x="14" y="352" width="98" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="saturnusButton" image="saturnus"/>
+                                <connections>
+                                    <action selector="toSaturnusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="0Y4-TB-7QD"/>
+                                    <segue destination="0dx-51-khB" kind="show" identifier="toSaturnusSegue" id="4He-SS-7eh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYu-YB-b3y">
+                                <rect key="frame" x="120" y="368" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="uranusButton" image="uranus"/>
+                                <connections>
+                                    <action selector="toUranusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="R8h-Yy-CbL"/>
+                                    <segue destination="KUd-Og-kcl" kind="show" identifier="toUranusSegue" id="rM1-E6-YEk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-Dn-aRX">
+                                <rect key="frame" x="214" y="368" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="neptunusButton" image="neptunus"/>
+                                <connections>
+                                    <action selector="toNeptunusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="TKj-0g-ay8"/>
+                                    <segue destination="2Th-T4-TWI" kind="show" identifier="toNeptunusSegue" id="IsU-Xl-yc3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfg-Gl-8J7">
+                                <rect key="frame" x="214" y="207" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="jupiterButton" image="jupiter"/>
+                                <connections>
+                                    <action selector="toJupiterAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UIM-Xz-Y5W"/>
+                                    <segue destination="1q9-Io-l2S" kind="show" identifier="toJupiterSegue" id="hF5-g2-O5x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Matahari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEs-ku-aZA">
+                                <rect key="frame" x="23" y="127" width="76" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Merkurius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-wi-iSW">
+                                <rect key="frame" x="121" y="127" width="88" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Venus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASI-97-ObK">
+                                <rect key="frame" x="229" y="127" width="50" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd3-5I-JzF">
+                                <rect key="frame" x="139" y="295" width="43" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jupiter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNh-aA-l2Z">
+                                <rect key="frame" x="224" y="295" width="61" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saturnus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXf-3j-AJZ">
+                                <rect key="frame" x="23" y="460" width="77" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uranus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APo-ZN-e7d">
+                                <rect key="frame" x="131" y="460" width="59" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bumi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq7-81-fDA">
+                                <rect key="frame" x="41" y="295" width="41" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Neptunus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joh-u7-7A6">
+                                <rect key="frame" x="214" y="460" width="80" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="AR Menu" image="circle.bottomthird.split" catalog="system" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="toBumi" destination="D98-42-f2e" id="ox8-Bm-OOw"/>
+                        <outlet property="toJupiter" destination="Hfg-Gl-8J7" id="pEH-Tr-YYd"/>
+                        <outlet property="toMars" destination="6X0-1b-Bym" id="Ee4-OD-Lwa"/>
+                        <outlet property="toMatahari" destination="NIM-rd-eVt" id="coM-Eb-qPJ"/>
+                        <outlet property="toMerkurius" destination="ETY-hX-vFU" id="HE2-LW-q3j"/>
+                        <outlet property="toNeptunus" destination="dOM-Dn-aRX" id="8ZW-eb-Kt7"/>
+                        <outlet property="toSaturnus" destination="vX7-wo-pmh" id="hzV-h9-WoH"/>
+                        <outlet property="toUranus" destination="hYu-YB-b3y" id="x7l-KU-dhA"/>
+                        <outlet property="toVenus" destination="Ksi-0x-iSn" id="hUQ-0n-G6w"/>
+                        <segue destination="ruE-we-U6b" kind="show" identifier="toMatahariSegue" id="adM-tI-I29"/>
+                        <segue destination="qXA-eW-dTn" kind="show" identifier="toMerkuriusSegue" id="eSg-u9-7CS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="1666.875" y="392.95774647887322"/>
+        </scene>
+        <!--Plane Detection Controller-->
+        <scene sceneID="G4x-Jx-5CZ">
+            <objects>
+                <viewController id="r8d-7v-6i7" customClass="PlaneDetectionController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l8S-8U-A2m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTW-Mg-HLY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="KgJ-5H-ZNC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UPH-Fk-dDf"/>
+                    <connections>
+                        <outlet property="scenePlaneDetection" destination="HTW-Mg-HLY" id="xKe-7r-R7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMu-dR-Q0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2608.125" y="1459.8591549295775"/>
+        </scene>
+        <!--Matahari Controller-->
+        <scene sceneID="JxV-AK-Ydk">
+            <objects>
+                <viewController id="ruE-we-U6b" customClass="MatahariController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dqg-Yi-g9C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mu7-4f-WYd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mu7-4f-WYd" firstAttribute="bottom" secondItem="5bD-It-uVe" secondAttribute="bottom" id="B5k-oq-3zC"/>
+                            <constraint firstItem="Mu7-4f-WYd" firstAttribute="top" secondItem="5bD-It-uVe" secondAttribute="top" id="SiW-tJ-u9R"/>
+                            <constraint firstItem="Mu7-4f-WYd" firstAttribute="trailing" secondItem="5bD-It-uVe" secondAttribute="trailing" id="UFe-6k-fbC"/>
+                            <constraint firstItem="Mu7-4f-WYd" firstAttribute="leading" secondItem="5bD-It-uVe" secondAttribute="leading" id="aw7-4T-XLO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5bD-It-uVe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rwm-kT-NLz"/>
+                    <connections>
+                        <outlet property="sceneMatahari" destination="Mu7-4f-WYd" id="Eme-t0-l8D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNz-43-YeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1428.75" y="1459.8591549295775"/>
+        </scene>
+        <!--Merkurius Controller-->
+        <scene sceneID="frB-dN-IuE">
+            <objects>
+                <viewController id="qXA-eW-dTn" customClass="MerkuriusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qPL-BY-maB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tj1-FF-HhV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tj1-FF-HhV" firstAttribute="trailing" secondItem="aJE-0n-fc6" secondAttribute="trailing" id="KDn-Yz-LEu"/>
+                            <constraint firstItem="tj1-FF-HhV" firstAttribute="leading" secondItem="aJE-0n-fc6" secondAttribute="leading" id="Xfo-wz-Hzd"/>
+                            <constraint firstItem="tj1-FF-HhV" firstAttribute="top" secondItem="aJE-0n-fc6" secondAttribute="top" id="txm-c2-Sbl"/>
+                            <constraint firstItem="tj1-FF-HhV" firstAttribute="bottom" secondItem="aJE-0n-fc6" secondAttribute="bottom" id="uGg-It-q4O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aJE-0n-fc6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="whP-qG-AeV"/>
+                    <connections>
+                        <outlet property="sceneMerkurius" destination="tj1-FF-HhV" id="mqm-A0-plo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmY-Zz-9rA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-733.125" y="1459.8591549295775"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -92,11 +614,24 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="1104" y="-406"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="background" width="640" height="1136"/>
+        <image name="bumi" width="400" height="400"/>
+        <image name="circle.bottomthird.split" catalog="system" width="64" height="60"/>
+        <image name="earthLogo" width="400" height="400"/>
+        <image name="exit" width="1600" height="1600"/>
+        <image name="floor" width="980" height="460"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="jupiter" width="400" height="400"/>
+        <image name="mars" width="400" height="400"/>
+        <image name="mercury" width="400" height="400"/>
+        <image name="neptunus" width="400" height="400"/>
+        <image name="saturnus" width="400" height="400"/>
+        <image name="sun" width="400" height="400"/>
+        <image name="uranus" width="400" height="400"/>
+        <image name="venus" width="400" height="400"/>
     </resources>
 </document>
