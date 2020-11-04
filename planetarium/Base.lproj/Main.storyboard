@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -361,71 +360,71 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-hX-vFU">
                                 <rect key="frame" x="120" y="39" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="merkuriusButton" image="mercury"/>
+                                <state key="normal" title="mercury" image="mercury"/>
                                 <connections>
-                                    <action selector="toMerkuriusAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="2J0-6o-Jan"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="CHt-r3-qhg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksi-0x-iSn">
                                 <rect key="frame" x="214" y="39" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="venusButton" image="venus"/>
+                                <state key="normal" title="venus" image="venus"/>
                                 <connections>
-                                    <action selector="toVenusAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cmA-Dj-rLO"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="B6s-9f-ZXO"/>
                                     <segue destination="uwd-ax-sZ2" kind="show" identifier="toVenusSegue" id="naJ-Xq-uoj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D98-42-f2e">
                                 <rect key="frame" x="21" y="207" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="bumiButton" image="bumi"/>
+                                <state key="normal" title="earth" image="bumi"/>
                                 <connections>
-                                    <action selector="toBumiAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="SVJ-jH-4Iz"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UfP-7S-Npo"/>
                                     <segue destination="W23-aQ-urT" kind="show" identifier="toBumiSegue" id="dyV-M9-QiO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X0-1b-Bym">
                                 <rect key="frame" x="120" y="207" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="marsButton" image="mars"/>
+                                <state key="normal" title="mars" image="mars"/>
                                 <connections>
-                                    <action selector="toMarsAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Hw7-uI-KZh"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Gm9-ei-SJf"/>
                                     <segue destination="Mu6-Gh-pjb" kind="show" identifier="toMarsSegue" id="O58-0u-YAo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-wo-pmh">
                                 <rect key="frame" x="14" y="352" width="98" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="saturnusButton" image="saturnus"/>
+                                <state key="normal" title="saturn" image="saturnus"/>
                                 <connections>
-                                    <action selector="toSaturnusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="0Y4-TB-7QD"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="peW-T9-RZ6"/>
                                     <segue destination="0dx-51-khB" kind="show" identifier="toSaturnusSegue" id="4He-SS-7eh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYu-YB-b3y">
                                 <rect key="frame" x="120" y="368" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="uranusButton" image="uranus"/>
+                                <state key="normal" title="uranus" image="uranus"/>
                                 <connections>
-                                    <action selector="toUranusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="R8h-Yy-CbL"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Hbc-Er-AqZ"/>
                                     <segue destination="KUd-Og-kcl" kind="show" identifier="toUranusSegue" id="rM1-E6-YEk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-Dn-aRX">
                                 <rect key="frame" x="214" y="368" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="neptunusButton" image="neptunus"/>
+                                <state key="normal" title="neptune" image="neptunus"/>
                                 <connections>
-                                    <action selector="toNeptunusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="TKj-0g-ay8"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Ny3-z3-lcC"/>
                                     <segue destination="2Th-T4-TWI" kind="show" identifier="toNeptunusSegue" id="IsU-Xl-yc3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfg-Gl-8J7">
                                 <rect key="frame" x="214" y="207" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="jupiterButton" image="jupiter"/>
+                                <state key="normal" title="jupiter" image="jupiter"/>
                                 <connections>
-                                    <action selector="toJupiterAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UIM-Xz-Y5W"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="d4K-e6-QnA"/>
                                     <segue destination="1q9-Io-l2S" kind="show" identifier="toJupiterSegue" id="hF5-g2-O5x"/>
                                 </connections>
                             </button>
@@ -499,14 +498,6 @@
                     <tabBarItem key="tabBarItem" title="AR Menu" image="circle.bottomthird.split" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="showAR" destination="NIM-rd-eVt" id="P97-ok-aVd"/>
-                        <outlet property="toBumi" destination="D98-42-f2e" id="ox8-Bm-OOw"/>
-                        <outlet property="toJupiter" destination="Hfg-Gl-8J7" id="pEH-Tr-YYd"/>
-                        <outlet property="toMars" destination="6X0-1b-Bym" id="Ee4-OD-Lwa"/>
-                        <outlet property="toMerkurius" destination="ETY-hX-vFU" id="HE2-LW-q3j"/>
-                        <outlet property="toNeptunus" destination="dOM-Dn-aRX" id="8ZW-eb-Kt7"/>
-                        <outlet property="toSaturnus" destination="vX7-wo-pmh" id="hzV-h9-WoH"/>
-                        <outlet property="toUranus" destination="hYu-YB-b3y" id="x7l-KU-dhA"/>
-                        <outlet property="toVenus" destination="Ksi-0x-iSn" id="hUQ-0n-G6w"/>
                         <segue destination="ruE-we-U6b" kind="show" identifier="toMatahariSegue" id="adM-tI-I29"/>
                         <segue destination="qXA-eW-dTn" kind="show" identifier="toMerkuriusSegue" id="eSg-u9-7CS"/>
                     </connections>
