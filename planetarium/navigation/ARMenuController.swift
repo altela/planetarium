@@ -10,7 +10,7 @@ import UIKit
 
 class ARMenuController: UIViewController {
 
-    @IBOutlet weak var toMatahari: UIButton!
+    @IBOutlet weak var showAR: UIButton!
         @IBOutlet weak var toMerkurius: UIButton!
             @IBOutlet weak var toVenus: UIButton!
                 @IBOutlet weak var toBumi: UIButton!
@@ -25,9 +25,16 @@ class ARMenuController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func toMatahariAction(_ sender: Any) {
-        performSegue(withIdentifier: "toMatahariSegue", sender: self)
-            print("Tombol Matahari Ditekan")
+
+    @IBAction func showAR(_ sender: UIButton) {
+        print(sender.currentTitle!)
+        
+        switch sender.currentTitle {
+        case "sun":
+            performSegue(withIdentifier: "toMatahariSegue", sender: self)
+        default:
+            print("Not Available")
+        }
     }
     
     @IBAction func toMerkuriusAction(_ sender: Any) {
