@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="43" id="wGA-Bc-Osl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Altela Eleviansyah Pramardhika" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-Mt-yKr">
@@ -33,7 +34,7 @@
                                     <constraint firstAttribute="height" constant="26" id="qKo-oc-Wgy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLt-Q7-IT8">
@@ -52,13 +53,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Detection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aub-Me-LWT">
                                 <rect key="frame" x="54" y="475" width="106" height="22"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exit App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S79-d2-64H">
                                 <rect key="frame" x="188" y="475" width="57" height="22"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViI-zw-EEp">
@@ -69,17 +70,18 @@
                                     <action selector="toExitAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ucy-i4-05B"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 0.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-0j-3kY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 0.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-0j-3kY">
                                 <rect key="frame" x="108" y="372" width="104" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="AhL-C6-HH6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="3aS-hB-5h2" secondAttribute="bottom" constant="20" id="2Qj-lZ-0bf"/>
                             <constraint firstItem="GRQ-3q-WXu" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="76" id="7P2-is-3Vt"/>
@@ -111,7 +113,6 @@
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="O3j-yr-ndv" secondAttribute="trailing" constant="35" id="xXU-er-hqz"/>
                             <constraint firstItem="O3j-yr-ndv" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="35" id="yhe-4j-8BG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="house" catalog="system" id="acW-dT-cKf"/>
                     <connections>
@@ -141,14 +142,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JSD-Kx-i03"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Otd-aU-L4U" firstAttribute="trailing" secondItem="JSD-Kx-i03" secondAttribute="trailing" id="Ajt-AO-qT2"/>
                             <constraint firstItem="Otd-aU-L4U" firstAttribute="bottom" secondItem="JSD-Kx-i03" secondAttribute="bottom" id="dNP-M3-sM8"/>
                             <constraint firstItem="Otd-aU-L4U" firstAttribute="top" secondItem="JSD-Kx-i03" secondAttribute="top" id="nmU-Iu-fZU"/>
                             <constraint firstItem="Otd-aU-L4U" firstAttribute="leading" secondItem="JSD-Kx-i03" secondAttribute="leading" id="tBF-Fz-0Lg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JSD-Kx-i03"/>
                     </view>
                     <navigationItem key="navigationItem" id="s9s-5A-0T9"/>
                     <connections>
@@ -171,14 +172,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZqP-ts-WUH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Nc7-4K-GUj" firstAttribute="leading" secondItem="ZqP-ts-WUH" secondAttribute="leading" id="178-95-YDc"/>
                             <constraint firstItem="Nc7-4K-GUj" firstAttribute="bottom" secondItem="ZqP-ts-WUH" secondAttribute="bottom" id="Bta-c9-4RJ"/>
                             <constraint firstItem="Nc7-4K-GUj" firstAttribute="trailing" secondItem="ZqP-ts-WUH" secondAttribute="trailing" id="eXy-yv-f3i"/>
                             <constraint firstItem="Nc7-4K-GUj" firstAttribute="top" secondItem="ZqP-ts-WUH" secondAttribute="top" id="nyr-Ly-Rdt"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZqP-ts-WUH"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vt0-84-qfF"/>
                     <connections>
@@ -201,14 +202,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="EOG-3V-2j2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lr8-p3-qcH" firstAttribute="top" secondItem="EOG-3V-2j2" secondAttribute="top" id="2Zd-ST-P6W"/>
                             <constraint firstItem="Lr8-p3-qcH" firstAttribute="bottom" secondItem="EOG-3V-2j2" secondAttribute="bottom" id="NNK-W4-owE"/>
                             <constraint firstItem="Lr8-p3-qcH" firstAttribute="leading" secondItem="EOG-3V-2j2" secondAttribute="leading" id="bfv-lq-r27"/>
                             <constraint firstItem="Lr8-p3-qcH" firstAttribute="trailing" secondItem="EOG-3V-2j2" secondAttribute="trailing" id="cER-ei-5qJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="EOG-3V-2j2"/>
                     </view>
                     <navigationItem key="navigationItem" id="11x-oA-uwu"/>
                     <connections>
@@ -231,14 +232,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hjV-07-1JT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Zno-5h-ZnU" firstAttribute="bottom" secondItem="hjV-07-1JT" secondAttribute="bottom" id="Dkk-BN-Pri"/>
                             <constraint firstItem="Zno-5h-ZnU" firstAttribute="trailing" secondItem="hjV-07-1JT" secondAttribute="trailing" id="JQ9-T7-rpy"/>
                             <constraint firstItem="Zno-5h-ZnU" firstAttribute="top" secondItem="hjV-07-1JT" secondAttribute="top" id="QnV-cl-q5e"/>
                             <constraint firstItem="Zno-5h-ZnU" firstAttribute="leading" secondItem="hjV-07-1JT" secondAttribute="leading" id="cPO-7q-aSg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hjV-07-1JT"/>
                     </view>
                     <navigationItem key="navigationItem" id="zeU-53-WzR"/>
                     <connections>
@@ -262,8 +263,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hKc-o8-RTT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rj8-Nj-be3"/>
                     <connections>
@@ -286,14 +287,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vEC-zL-Pmn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DAL-Rv-Zhp" firstAttribute="bottom" secondItem="vEC-zL-Pmn" secondAttribute="bottom" id="jKN-2f-pOs"/>
                             <constraint firstItem="DAL-Rv-Zhp" firstAttribute="trailing" secondItem="vEC-zL-Pmn" secondAttribute="trailing" id="sDL-ey-dqk"/>
                             <constraint firstItem="DAL-Rv-Zhp" firstAttribute="leading" secondItem="vEC-zL-Pmn" secondAttribute="leading" id="tUJ-Om-zfy"/>
                             <constraint firstItem="DAL-Rv-Zhp" firstAttribute="top" secondItem="vEC-zL-Pmn" secondAttribute="top" id="uV7-4Y-DJM"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vEC-zL-Pmn"/>
                     </view>
                     <navigationItem key="navigationItem" id="8xC-08-T0j"/>
                     <connections>
@@ -316,14 +317,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ANC-cr-sbo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JaZ-lb-zRr" firstAttribute="bottom" secondItem="ANC-cr-sbo" secondAttribute="bottom" id="Jk7-fn-oIj"/>
                             <constraint firstItem="JaZ-lb-zRr" firstAttribute="top" secondItem="ANC-cr-sbo" secondAttribute="top" id="adP-hG-qlN"/>
                             <constraint firstItem="JaZ-lb-zRr" firstAttribute="trailing" secondItem="ANC-cr-sbo" secondAttribute="trailing" id="hwN-GQ-bQ6"/>
                             <constraint firstItem="JaZ-lb-zRr" firstAttribute="leading" secondItem="ANC-cr-sbo" secondAttribute="leading" id="n48-1C-ts0"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ANC-cr-sbo"/>
                     </view>
                     <navigationItem key="navigationItem" id="7FM-yf-yhE"/>
                     <connections>
@@ -349,162 +350,154 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-rd-eVt">
                                 <rect key="frame" x="21" y="39" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="matahariButton" image="sun">
+                                <state key="normal" title="sun" image="sun">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <action selector="toMatahariAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="24C-wZ-HTD"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="qDC-yO-1di"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-hX-vFU">
                                 <rect key="frame" x="120" y="39" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="merkuriusButton" image="mercury"/>
+                                <state key="normal" title="mercury" image="mercury"/>
                                 <connections>
-                                    <action selector="toMerkuriusAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="2J0-6o-Jan"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="CHt-r3-qhg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksi-0x-iSn">
                                 <rect key="frame" x="214" y="39" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="venusButton" image="venus"/>
+                                <state key="normal" title="venus" image="venus"/>
                                 <connections>
-                                    <action selector="toVenusAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cmA-Dj-rLO"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="B6s-9f-ZXO"/>
                                     <segue destination="uwd-ax-sZ2" kind="show" identifier="toVenusSegue" id="naJ-Xq-uoj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D98-42-f2e">
                                 <rect key="frame" x="21" y="207" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="bumiButton" image="bumi"/>
+                                <state key="normal" title="earth" image="bumi"/>
                                 <connections>
-                                    <action selector="toBumiAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="SVJ-jH-4Iz"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UfP-7S-Npo"/>
                                     <segue destination="W23-aQ-urT" kind="show" identifier="toBumiSegue" id="dyV-M9-QiO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X0-1b-Bym">
                                 <rect key="frame" x="120" y="207" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="marsButton" image="mars"/>
+                                <state key="normal" title="mars" image="mars"/>
                                 <connections>
-                                    <action selector="toMarsAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Hw7-uI-KZh"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Gm9-ei-SJf"/>
                                     <segue destination="Mu6-Gh-pjb" kind="show" identifier="toMarsSegue" id="O58-0u-YAo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-wo-pmh">
                                 <rect key="frame" x="14" y="352" width="98" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="saturnusButton" image="saturnus"/>
+                                <state key="normal" title="saturn" image="saturnus"/>
                                 <connections>
-                                    <action selector="toSaturnusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="0Y4-TB-7QD"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="peW-T9-RZ6"/>
                                     <segue destination="0dx-51-khB" kind="show" identifier="toSaturnusSegue" id="4He-SS-7eh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYu-YB-b3y">
                                 <rect key="frame" x="120" y="368" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="uranusButton" image="uranus"/>
+                                <state key="normal" title="uranus" image="uranus"/>
                                 <connections>
-                                    <action selector="toUranusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="R8h-Yy-CbL"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Hbc-Er-AqZ"/>
                                     <segue destination="KUd-Og-kcl" kind="show" identifier="toUranusSegue" id="rM1-E6-YEk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-Dn-aRX">
                                 <rect key="frame" x="214" y="368" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="neptunusButton" image="neptunus"/>
+                                <state key="normal" title="neptune" image="neptunus"/>
                                 <connections>
-                                    <action selector="toNeptunusButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="TKj-0g-ay8"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Ny3-z3-lcC"/>
                                     <segue destination="2Th-T4-TWI" kind="show" identifier="toNeptunusSegue" id="IsU-Xl-yc3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfg-Gl-8J7">
                                 <rect key="frame" x="214" y="207" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="jupiterButton" image="jupiter"/>
+                                <state key="normal" title="jupiter" image="jupiter"/>
                                 <connections>
-                                    <action selector="toJupiterAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UIM-Xz-Y5W"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="d4K-e6-QnA"/>
                                     <segue destination="1q9-Io-l2S" kind="show" identifier="toJupiterSegue" id="hF5-g2-O5x"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Matahari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEs-ku-aZA">
-                                <rect key="frame" x="23" y="127" width="76" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEs-ku-aZA">
+                                <rect key="frame" x="45" y="127" width="32" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Merkurius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-wi-iSW">
-                                <rect key="frame" x="121" y="127" width="88" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mercury" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-wi-iSW">
+                                <rect key="frame" x="123" y="127" width="74" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Venus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASI-97-ObK">
                                 <rect key="frame" x="229" y="127" width="50" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd3-5I-JzF">
                                 <rect key="frame" x="139" y="295" width="43" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jupiter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNh-aA-l2Z">
                                 <rect key="frame" x="224" y="295" width="61" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saturnus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXf-3j-AJZ">
-                                <rect key="frame" x="23" y="460" width="77" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saturn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXf-3j-AJZ">
+                                <rect key="frame" x="32" y="460" width="58" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uranus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APo-ZN-e7d">
                                 <rect key="frame" x="131" y="460" width="59" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bumi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq7-81-fDA">
-                                <rect key="frame" x="41" y="295" width="41" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq7-81-fDA">
+                                <rect key="frame" x="41" y="295" width="48" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Neptunus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joh-u7-7A6">
-                                <rect key="frame" x="214" y="460" width="80" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Neptune" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joh-u7-7A6">
+                                <rect key="frame" x="219" y="460" width="71" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AR Menu" image="circle.bottomthird.split" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="toBumi" destination="D98-42-f2e" id="ox8-Bm-OOw"/>
-                        <outlet property="toJupiter" destination="Hfg-Gl-8J7" id="pEH-Tr-YYd"/>
-                        <outlet property="toMars" destination="6X0-1b-Bym" id="Ee4-OD-Lwa"/>
-                        <outlet property="toMatahari" destination="NIM-rd-eVt" id="coM-Eb-qPJ"/>
-                        <outlet property="toMerkurius" destination="ETY-hX-vFU" id="HE2-LW-q3j"/>
-                        <outlet property="toNeptunus" destination="dOM-Dn-aRX" id="8ZW-eb-Kt7"/>
-                        <outlet property="toSaturnus" destination="vX7-wo-pmh" id="hzV-h9-WoH"/>
-                        <outlet property="toUranus" destination="hYu-YB-b3y" id="x7l-KU-dhA"/>
-                        <outlet property="toVenus" destination="Ksi-0x-iSn" id="hUQ-0n-G6w"/>
+                        <outlet property="showAR" destination="NIM-rd-eVt" id="P97-ok-aVd"/>
                         <segue destination="ruE-we-U6b" kind="show" identifier="toMatahariSegue" id="adM-tI-I29"/>
                         <segue destination="qXA-eW-dTn" kind="show" identifier="toMerkuriusSegue" id="eSg-u9-7CS"/>
                     </connections>
@@ -526,8 +519,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="KgJ-5H-ZNC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="UPH-Fk-dDf"/>
                     <connections>
@@ -550,14 +543,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5bD-It-uVe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Mu7-4f-WYd" firstAttribute="bottom" secondItem="5bD-It-uVe" secondAttribute="bottom" id="B5k-oq-3zC"/>
                             <constraint firstItem="Mu7-4f-WYd" firstAttribute="top" secondItem="5bD-It-uVe" secondAttribute="top" id="SiW-tJ-u9R"/>
                             <constraint firstItem="Mu7-4f-WYd" firstAttribute="trailing" secondItem="5bD-It-uVe" secondAttribute="trailing" id="UFe-6k-fbC"/>
                             <constraint firstItem="Mu7-4f-WYd" firstAttribute="leading" secondItem="5bD-It-uVe" secondAttribute="leading" id="aw7-4T-XLO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5bD-It-uVe"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rwm-kT-NLz"/>
                     <connections>
@@ -580,14 +573,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aJE-0n-fc6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tj1-FF-HhV" firstAttribute="trailing" secondItem="aJE-0n-fc6" secondAttribute="trailing" id="KDn-Yz-LEu"/>
                             <constraint firstItem="tj1-FF-HhV" firstAttribute="leading" secondItem="aJE-0n-fc6" secondAttribute="leading" id="Xfo-wz-Hzd"/>
                             <constraint firstItem="tj1-FF-HhV" firstAttribute="top" secondItem="aJE-0n-fc6" secondAttribute="top" id="txm-c2-Sbl"/>
                             <constraint firstItem="tj1-FF-HhV" firstAttribute="bottom" secondItem="aJE-0n-fc6" secondAttribute="bottom" id="uGg-It-q4O"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aJE-0n-fc6"/>
                     </view>
                     <navigationItem key="navigationItem" id="whP-qG-AeV"/>
                     <connections>
@@ -620,11 +613,11 @@
     <resources>
         <image name="background" width="640" height="1136"/>
         <image name="bumi" width="400" height="400"/>
-        <image name="circle.bottomthird.split" catalog="system" width="64" height="60"/>
+        <image name="circle.bottomthird.split" catalog="system" width="128" height="121"/>
         <image name="earthLogo" width="400" height="400"/>
         <image name="exit" width="1600" height="1600"/>
         <image name="floor" width="980" height="460"/>
-        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="jupiter" width="400" height="400"/>
         <image name="mars" width="400" height="400"/>
         <image name="mercury" width="400" height="400"/>
@@ -633,5 +626,50 @@
         <image name="sun" width="400" height="400"/>
         <image name="uranus" width="400" height="400"/>
         <image name="venus" width="400" height="400"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
