@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +12,14 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="AboutController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-hB-5h2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="planetARium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRQ-3q-WXu">
-                                <rect key="frame" x="76" y="291" width="168" height="43"/>
+                                <rect key="frame" x="76" y="323" width="448" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="wGA-Bc-Osl"/>
                                 </constraints>
@@ -29,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Altela Eleviansyah Pramardhika" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-Mt-yKr">
-                                <rect key="frame" x="22" y="338" width="276" height="26"/>
+                                <rect key="frame" x="162" y="370" width="276" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="qKo-oc-Wgy"/>
                                 </constraints>
@@ -38,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLt-Q7-IT8">
-                                <rect key="frame" x="76" y="430" width="57" height="37"/>
+                                <rect key="frame" x="76" y="462" width="0.0" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="0qj-UB-vPd"/>
                                 </constraints>
@@ -48,22 +47,22 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earthLogo" translatesAutoresizingMaskIntoConstraints="NO" id="O3j-yr-ndv">
-                                <rect key="frame" x="35" y="48" width="250" height="235"/>
+                                <rect key="frame" x="35" y="48" width="530" height="267"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Detection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aub-Me-LWT">
-                                <rect key="frame" x="54" y="475" width="106" height="22"/>
+                                <rect key="frame" x="54" y="507" width="217.5" height="22"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exit App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S79-d2-64H">
-                                <rect key="frame" x="188" y="475" width="57" height="22"/>
+                                <rect key="frame" x="299.5" y="507" width="57" height="22"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViI-zw-EEp">
-                                <rect key="frame" x="189" y="423" width="55" height="46"/>
+                                <rect key="frame" x="132" y="455" width="392" height="46"/>
                                 <state key="normal" title="exit" image="exit"/>
                                 <connections>
                                     <action selector="toExitAction:" destination="uIL-xq-d6p" eventType="touchUpInside" id="7aU-eV-T0z"/>
@@ -71,7 +70,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 0.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-0j-3kY">
-                                <rect key="frame" x="108" y="372" width="104" height="26"/>
+                                <rect key="frame" x="108" y="404" width="384" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="AhL-C6-HH6"/>
                                 </constraints>
@@ -135,11 +134,11 @@
             <objects>
                 <viewController id="uwd-ax-sZ2" customClass="VenusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qat-HL-dCd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otd-aU-L4U">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JSD-Kx-i03"/>
@@ -165,11 +164,11 @@
             <objects>
                 <viewController id="W23-aQ-urT" customClass="BumiController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgF-6Q-T0j">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nc7-4K-GUj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZqP-ts-WUH"/>
@@ -195,11 +194,11 @@
             <objects>
                 <viewController id="Mu6-Gh-pjb" customClass="MarsController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wTO-p2-sq5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lr8-p3-qcH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EOG-3V-2j2"/>
@@ -225,11 +224,11 @@
             <objects>
                 <viewController id="1q9-Io-l2S" customClass="JupiterController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SnS-Nj-IMx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zno-5h-ZnU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hjV-07-1JT"/>
@@ -255,7 +254,7 @@
             <objects>
                 <viewController id="KUd-Og-kcl" customClass="UranusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z5L-ab-B39">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EsK-ZX-NWS">
@@ -280,11 +279,11 @@
             <objects>
                 <viewController id="0dx-51-khB" customClass="SaturnusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k29-M2-2Xq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAL-Rv-Zhp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vEC-zL-Pmn"/>
@@ -310,11 +309,11 @@
             <objects>
                 <viewController id="2Th-T4-TWI" customClass="NeptunusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="92c-xo-gTx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaZ-lb-zRr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ANC-cr-sbo"/>
@@ -340,7 +339,7 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ARMenuController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="c6S-Rc-szR">
@@ -511,7 +510,7 @@
             <objects>
                 <viewController id="r8d-7v-6i7" customClass="PlaneDetectionController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l8S-8U-A2m">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTW-Mg-HLY">
@@ -531,16 +530,16 @@
             </objects>
             <point key="canvasLocation" x="-2608.125" y="1459.8591549295775"/>
         </scene>
-        <!--Matahari Controller-->
+        <!--Sun Controller-->
         <scene sceneID="JxV-AK-Ydk">
             <objects>
-                <viewController id="ruE-we-U6b" customClass="MatahariController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ruE-we-U6b" customClass="SunController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqg-Yi-g9C">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mu7-4f-WYd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5bD-It-uVe"/>
@@ -554,7 +553,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Rwm-kT-NLz"/>
                     <connections>
-                        <outlet property="sceneMatahari" destination="Mu7-4f-WYd" id="Eme-t0-l8D"/>
+                        <outlet property="sunView" destination="Mu7-4f-WYd" id="Eme-t0-l8D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNz-43-YeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -566,11 +565,11 @@
             <objects>
                 <viewController id="qXA-eW-dTn" customClass="MerkuriusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qPL-BY-maB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tj1-FF-HhV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aJE-0n-fc6"/>
