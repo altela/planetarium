@@ -20,7 +20,7 @@ class MatahariController: UIViewController, ARSCNViewDelegate {
         // Atur Properti Delegasi Untuk Run Ke Self Controller
         sceneMatahari.delegate = self
         
-        // Deklarasi Properti Material Tulisan Untuk Matahari
+        // Material declaration properties for sun
         let materialFontMatahari = SCNMaterial()
         let textMatahari = SCNText(string:
                 "Matahari (Sun)\nStruktur : Plasma Hydrogen & Helium\nSuhu : 5,505°C\nJarak Dari Bumi : 152.06 Juta Km\nRotasi : 27 Hari Bumi"
