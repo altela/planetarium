@@ -18,23 +18,25 @@ class SunController: UIViewController, ARSCNViewDelegate {
     let planetDescription = PlanetDescription()
     let planetNodes = PlanetNodes()
     let descriptionNodes = DescriptionNodes()
+    var choosenPlanet: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         sunView.delegate = self
         
         // Text Material
         let sunText = planetModel.material
-        let sunDescription = SCNText(string: planetDescription.description["sun"], extrusionDepth: 1)
-        sunText.diffuse.contents = UIImage(named: planetDescription.textures["sun"]!)
+        let sunDescription = SCNText(string: planetDescription.description[choosenPlanet], extrusionDepth: 1)
+        sunText.diffuse.contents = UIImage(named: planetDescription.textures[choosenPlanet]!)
         sunDescription.materials = [sunText]
 
         // Sphere Material
         let sunShape = planetModel.sphere
         let sunMaterial = planetModel.material
         sunShape.materials = [sunMaterial]
-        sunMaterial.diffuse.contents = UIImage(named: planetModel.textures["sun"]!)
+        sunMaterial.diffuse.contents = UIImage(named: planetModel.textures[choosenPlanet]!)
 
 
         // Node Declaration
