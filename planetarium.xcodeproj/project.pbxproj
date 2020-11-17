@@ -14,7 +14,7 @@
 		9F4A36DC24BC1028007B5C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A36DA24BC1028007B5C22 /* Main.storyboard */; };
 		9F4A36DE24BC102C007B5C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A36DD24BC102C007B5C22 /* Assets.xcassets */; };
 		9F4A36E124BC102D007B5C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A36DF24BC102D007B5C22 /* LaunchScreen.storyboard */; };
-		9F4A36E924BC1270007B5C22 /* SunController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36E824BC1270007B5C22 /* SunController.swift */; };
+		9F4A36E924BC1270007B5C22 /* planetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36E824BC1270007B5C22 /* planetController.swift */; };
 		9F4A36EB24BC1543007B5C22 /* ARMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36EA24BC1543007B5C22 /* ARMenuController.swift */; };
 		9F4A36ED24BC186E007B5C22 /* MerkuriusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36EC24BC186E007B5C22 /* MerkuriusController.swift */; };
 		9F4A36EF24BC1881007B5C22 /* VenusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A36EE24BC1881007B5C22 /* VenusController.swift */; };
@@ -39,7 +39,7 @@
 		9F4A36DD24BC102C007B5C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4A36E024BC102D007B5C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4A36E224BC102D007B5C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F4A36E824BC1270007B5C22 /* SunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunController.swift; sourceTree = "<group>"; };
+		9F4A36E824BC1270007B5C22 /* planetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetController.swift; sourceTree = "<group>"; };
 		9F4A36EA24BC1543007B5C22 /* ARMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMenuController.swift; sourceTree = "<group>"; };
 		9F4A36EC24BC186E007B5C22 /* MerkuriusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerkuriusController.swift; sourceTree = "<group>"; };
 		9F4A36EE24BC1881007B5C22 /* VenusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenusController.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				9F4A36D624BC1028007B5C22 /* AboutController.swift */,
 				9F4A36EA24BC1543007B5C22 /* ARMenuController.swift */,
 				9F17FCA524C712BB008D39A1 /* PlaneDetectionController.swift */,
-				9F4A36E824BC1270007B5C22 /* SunController.swift */,
+				9F4A36E824BC1270007B5C22 /* planetController.swift */,
 				9F4A36EC24BC186E007B5C22 /* MerkuriusController.swift */,
 				9F4A36EE24BC1881007B5C22 /* VenusController.swift */,
 				9F4A36F024BC1894007B5C22 /* BumiController.swift */,
@@ -207,7 +207,7 @@
 			files = (
 				9F4A36FB24BC18F9007B5C22 /* NeptunusController.swift in Sources */,
 				9F4A36F124BC1894007B5C22 /* BumiController.swift in Sources */,
-				9F4A36E924BC1270007B5C22 /* SunController.swift in Sources */,
+				9F4A36E924BC1270007B5C22 /* planetController.swift in Sources */,
 				9F4A36ED24BC186E007B5C22 /* MerkuriusController.swift in Sources */,
 				9F17FCA624C712BB008D39A1 /* PlaneDetectionController.swift in Sources */,
 				9F4A36F924BC18EB007B5C22 /* UranusController.swift in Sources */,

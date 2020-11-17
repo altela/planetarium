@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-class SunController: UIViewController, ARSCNViewDelegate {
+class planetController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var sunView: ARSCNView!
     

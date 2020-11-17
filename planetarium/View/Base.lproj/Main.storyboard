@@ -498,8 +498,7 @@
                     <tabBarItem key="tabBarItem" title="AR Menu" image="circle.bottomthird.split" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="showAR" destination="NIM-rd-eVt" id="qiz-nt-0jZ"/>
-                        <segue destination="qXA-eW-dTn" kind="show" identifier="toMerkuriusSegue" id="eSg-u9-7CS"/>
-                        <segue destination="ruE-we-U6b" kind="show" identifier="toMatahariSegue" id="vR9-Ni-qHc"/>
+                        <segue destination="ruE-we-U6b" kind="show" identifier="showARSegue" id="vR9-Ni-qHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -531,10 +530,10 @@
             </objects>
             <point key="canvasLocation" x="-2608.125" y="1459.8591549295775"/>
         </scene>
-        <!--Sun Controller-->
+        <!--Planet Controller-->
         <scene sceneID="JxV-AK-Ydk">
             <objects>
-                <viewController id="ruE-we-U6b" customClass="SunController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ruE-we-U6b" customClass="planetController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqg-Yi-g9C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -566,11 +565,11 @@
             <objects>
                 <viewController id="qXA-eW-dTn" customClass="MerkuriusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qPL-BY-maB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tj1-FF-HhV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aJE-0n-fc6"/>
