@@ -22,7 +22,7 @@ class ARMenuController: UIViewController {
 }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        if segue.identifier == "showARSegue" {
-        let vc = segue.destination as! planetController
+        let vc = segue.destination as! PlanetController
            vc.choosenPlanet = (sender as! UIButton).titleLabel!.text!
        }
     }

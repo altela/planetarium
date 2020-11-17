@@ -10,9 +10,9 @@ import UIKit
 import SceneKit
 import ARKit
 
-class planetController: UIViewController, ARSCNViewDelegate {
+class PlanetController: UIViewController, ARSCNViewDelegate {
     
-    @IBOutlet var sunView: ARSCNView!
+    @IBOutlet var planetView: ARSCNView!
     
     let planetModel = PlanetModel()
     let planetDescription = PlanetDescription()
@@ -24,35 +24,34 @@ class planetController: UIViewController, ARSCNViewDelegate {
         super.viewDidLoad()
         
 
-        sunView.delegate = self
+        planetView.delegate = self
         
         // Text Material
-        let sunText = planetModel.material
-        let sunDescription = SCNText(string: planetDescription.description[choosenPlanet], extrusionDepth: 1)
-        sunText.diffuse.contents = UIImage(named: planetDescription.textures[choosenPlanet]!)
-        sunDescription.materials = [sunText]
+        let text = planetModel.material
+        let description = SCNText(string: planetDescription.description[choosenPlanet], extrusionDepth: 1)
+        text.diffuse.contents = UIImage(named: planetDescription.textures[choosenPlanet]!)
+        description.materials = [text]
 
         // Sphere Material
-        let sunShape = planetModel.sphere
-        let sunMaterial = planetModel.material
-        sunShape.materials = [sunMaterial]
-        sunMaterial.diffuse.contents = UIImage(named: planetModel.textures[choosenPlanet]!)
-
+        let shape = planetModel.sphere
+        let material = planetModel.material
+        shape.materials = [material]
+        material.diffuse.contents = UIImage(named: planetModel.textures[choosenPlanet]!)
 
         // Node Declaration
-        let sunDescriptionNodes = descriptionNodes.nodes
-        sunDescriptionNodes.position = descriptionNodes.position
-        sunDescriptionNodes.scale = descriptionNodes.scale
-        sunDescriptionNodes.geometry = sunDescription
-        sunView.scene.rootNode.addChildNode(sunDescriptionNodes)
-        sunView.autoenablesDefaultLighting = true
+        let textSpawn = descriptionNodes.nodes
+        textSpawn.position = descriptionNodes.position
+        textSpawn.scale = descriptionNodes.scale
+        textSpawn.geometry = description
+        planetView.scene.rootNode.addChildNode(textSpawn)
+        planetView.autoenablesDefaultLighting = true
 
         // Deklarasi Node Untuk Menampilkan Planet Pada AR
-        let sunNodes = planetNodes.nodes
-        sunNodes.position = planetNodes.position
-        sunNodes.geometry = sunShape
-        sunView.scene.rootNode.addChildNode(sunNodes)
-        sunView.autoenablesDefaultLighting = true
+        let planetSpawn = planetNodes.nodes
+        planetSpawn.position = planetNodes.position
+        planetSpawn.geometry = shape
+        planetView.scene.rootNode.addChildNode(planetSpawn)
+        planetView.autoenablesDefaultLighting = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,13 +64,13 @@ class planetController: UIViewController, ARSCNViewDelegate {
         configuration.planeDetection = .horizontal
 
         // Jalankan Session
-        sunView.session.run(configuration)
+        planetView.session.run(configuration)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
         // Pause Session
-        sunView.session.pause()
+        planetView.session.pause()
     }
 }

@@ -130,211 +130,6 @@
             </objects>
             <point key="canvasLocation" x="526.875" y="394.01408450704224"/>
         </scene>
-        <!--Venus Controller-->
-        <scene sceneID="fme-Jr-EgL">
-            <objects>
-                <viewController id="uwd-ax-sZ2" customClass="VenusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qat-HL-dCd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otd-aU-L4U">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="JSD-Kx-i03"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Otd-aU-L4U" firstAttribute="trailing" secondItem="JSD-Kx-i03" secondAttribute="trailing" id="Ajt-AO-qT2"/>
-                            <constraint firstItem="Otd-aU-L4U" firstAttribute="bottom" secondItem="JSD-Kx-i03" secondAttribute="bottom" id="dNP-M3-sM8"/>
-                            <constraint firstItem="Otd-aU-L4U" firstAttribute="top" secondItem="JSD-Kx-i03" secondAttribute="top" id="nmU-Iu-fZU"/>
-                            <constraint firstItem="Otd-aU-L4U" firstAttribute="leading" secondItem="JSD-Kx-i03" secondAttribute="leading" id="tBF-Fz-0Lg"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="s9s-5A-0T9"/>
-                    <connections>
-                        <outlet property="sceneVenus" destination="Otd-aU-L4U" id="4pq-Ls-yXm"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S6j-0y-rdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-50.625" y="1460.9154929577464"/>
-        </scene>
-        <!--Bumi Controller-->
-        <scene sceneID="t82-hZ-Pq8">
-            <objects>
-                <viewController id="W23-aQ-urT" customClass="BumiController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hgF-6Q-T0j">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nc7-4K-GUj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ZqP-ts-WUH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Nc7-4K-GUj" firstAttribute="leading" secondItem="ZqP-ts-WUH" secondAttribute="leading" id="178-95-YDc"/>
-                            <constraint firstItem="Nc7-4K-GUj" firstAttribute="bottom" secondItem="ZqP-ts-WUH" secondAttribute="bottom" id="Bta-c9-4RJ"/>
-                            <constraint firstItem="Nc7-4K-GUj" firstAttribute="trailing" secondItem="ZqP-ts-WUH" secondAttribute="trailing" id="eXy-yv-f3i"/>
-                            <constraint firstItem="Nc7-4K-GUj" firstAttribute="top" secondItem="ZqP-ts-WUH" secondAttribute="top" id="nyr-Ly-Rdt"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Vt0-84-qfF"/>
-                    <connections>
-                        <outlet property="sceneBumi" destination="Nc7-4K-GUj" id="jzi-zN-ALb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tg2-bR-qcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="624.375" y="1459.8591549295775"/>
-        </scene>
-        <!--Mars Controller-->
-        <scene sceneID="6wc-pV-8rF">
-            <objects>
-                <viewController id="Mu6-Gh-pjb" customClass="MarsController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wTO-p2-sq5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lr8-p3-qcH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="EOG-3V-2j2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Lr8-p3-qcH" firstAttribute="top" secondItem="EOG-3V-2j2" secondAttribute="top" id="2Zd-ST-P6W"/>
-                            <constraint firstItem="Lr8-p3-qcH" firstAttribute="bottom" secondItem="EOG-3V-2j2" secondAttribute="bottom" id="NNK-W4-owE"/>
-                            <constraint firstItem="Lr8-p3-qcH" firstAttribute="leading" secondItem="EOG-3V-2j2" secondAttribute="leading" id="bfv-lq-r27"/>
-                            <constraint firstItem="Lr8-p3-qcH" firstAttribute="trailing" secondItem="EOG-3V-2j2" secondAttribute="trailing" id="cER-ei-5qJ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="11x-oA-uwu"/>
-                    <connections>
-                        <outlet property="sceneMars" destination="Lr8-p3-qcH" id="jQf-qH-EHN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1p6-VU-aB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1327.5" y="1461.9718309859154"/>
-        </scene>
-        <!--Jupiter Controller-->
-        <scene sceneID="TjR-ef-qQt">
-            <objects>
-                <viewController id="1q9-Io-l2S" customClass="JupiterController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SnS-Nj-IMx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zno-5h-ZnU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="hjV-07-1JT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Zno-5h-ZnU" firstAttribute="bottom" secondItem="hjV-07-1JT" secondAttribute="bottom" id="Dkk-BN-Pri"/>
-                            <constraint firstItem="Zno-5h-ZnU" firstAttribute="trailing" secondItem="hjV-07-1JT" secondAttribute="trailing" id="JQ9-T7-rpy"/>
-                            <constraint firstItem="Zno-5h-ZnU" firstAttribute="top" secondItem="hjV-07-1JT" secondAttribute="top" id="QnV-cl-q5e"/>
-                            <constraint firstItem="Zno-5h-ZnU" firstAttribute="leading" secondItem="hjV-07-1JT" secondAttribute="leading" id="cPO-7q-aSg"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="zeU-53-WzR"/>
-                    <connections>
-                        <outlet property="sceneJupiter" destination="Zno-5h-ZnU" id="rNL-KO-l8t"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j6o-vn-sTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2021.25" y="1458.8028169014085"/>
-        </scene>
-        <!--Uranus Controller-->
-        <scene sceneID="EL2-Kl-Zgt">
-            <objects>
-                <viewController id="KUd-Og-kcl" customClass="UranusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="z5L-ab-B39">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EsK-ZX-NWS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="hKc-o8-RTT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Rj8-Nj-be3"/>
-                    <connections>
-                        <outlet property="sceneUranus" destination="EsK-ZX-NWS" id="1Zl-Z2-A2e"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3wq-4F-u6X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3390" y="1458.8028169014085"/>
-        </scene>
-        <!--Saturnus Controller-->
-        <scene sceneID="eEd-qz-jHD">
-            <objects>
-                <viewController id="0dx-51-khB" customClass="SaturnusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k29-M2-2Xq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAL-Rv-Zhp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vEC-zL-Pmn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="DAL-Rv-Zhp" firstAttribute="bottom" secondItem="vEC-zL-Pmn" secondAttribute="bottom" id="jKN-2f-pOs"/>
-                            <constraint firstItem="DAL-Rv-Zhp" firstAttribute="trailing" secondItem="vEC-zL-Pmn" secondAttribute="trailing" id="sDL-ey-dqk"/>
-                            <constraint firstItem="DAL-Rv-Zhp" firstAttribute="leading" secondItem="vEC-zL-Pmn" secondAttribute="leading" id="tUJ-Om-zfy"/>
-                            <constraint firstItem="DAL-Rv-Zhp" firstAttribute="top" secondItem="vEC-zL-Pmn" secondAttribute="top" id="uV7-4Y-DJM"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="8xC-08-T0j"/>
-                    <connections>
-                        <outlet property="sceneSaturnus" destination="DAL-Rv-Zhp" id="XV6-BX-baY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zmY-7d-pBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2700" y="1458.8028169014085"/>
-        </scene>
-        <!--Neptunus Controller-->
-        <scene sceneID="a7M-zy-Bua">
-            <objects>
-                <viewController id="2Th-T4-TWI" customClass="NeptunusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="92c-xo-gTx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaZ-lb-zRr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ANC-cr-sbo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="JaZ-lb-zRr" firstAttribute="bottom" secondItem="ANC-cr-sbo" secondAttribute="bottom" id="Jk7-fn-oIj"/>
-                            <constraint firstItem="JaZ-lb-zRr" firstAttribute="top" secondItem="ANC-cr-sbo" secondAttribute="top" id="adP-hG-qlN"/>
-                            <constraint firstItem="JaZ-lb-zRr" firstAttribute="trailing" secondItem="ANC-cr-sbo" secondAttribute="trailing" id="hwN-GQ-bQ6"/>
-                            <constraint firstItem="JaZ-lb-zRr" firstAttribute="leading" secondItem="ANC-cr-sbo" secondAttribute="leading" id="n48-1C-ts0"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="7FM-yf-yhE"/>
-                    <connections>
-                        <outlet property="sceneNeptunus" destination="JaZ-lb-zRr" id="m9G-H6-mZI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RB8-g9-2P3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4089.375" y="1456.6901408450703"/>
-        </scene>
         <!--AR Menu-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -362,7 +157,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="mercury" image="mercury"/>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="CHt-r3-qhg"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rgJ-Jk-f5a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksi-0x-iSn">
@@ -370,8 +165,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="venus" image="venus"/>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="B6s-9f-ZXO"/>
-                                    <segue destination="uwd-ax-sZ2" kind="show" identifier="toVenusSegue" id="naJ-Xq-uoj"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="aUS-aC-udJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D98-42-f2e">
@@ -379,8 +173,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="earth" image="bumi"/>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UfP-7S-Npo"/>
-                                    <segue destination="W23-aQ-urT" kind="show" identifier="toBumiSegue" id="dyV-M9-QiO"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="bTc-lR-tVL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X0-1b-Bym">
@@ -388,8 +181,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="mars" image="mars"/>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Gm9-ei-SJf"/>
-                                    <segue destination="Mu6-Gh-pjb" kind="show" identifier="toMarsSegue" id="O58-0u-YAo"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ArA-gj-LSo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-wo-pmh">
@@ -397,8 +189,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="saturn" image="saturnus"/>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="peW-T9-RZ6"/>
-                                    <segue destination="0dx-51-khB" kind="show" identifier="toSaturnusSegue" id="4He-SS-7eh"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8aJ-g2-kEV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYu-YB-b3y">
@@ -406,8 +197,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="uranus" image="uranus"/>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Hbc-Er-AqZ"/>
-                                    <segue destination="KUd-Og-kcl" kind="show" identifier="toUranusSegue" id="rM1-E6-YEk"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Q1A-RO-3VL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-Dn-aRX">
@@ -415,8 +205,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="neptune" image="neptunus"/>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Ny3-z3-lcC"/>
-                                    <segue destination="2Th-T4-TWI" kind="show" identifier="toNeptunusSegue" id="IsU-Xl-yc3"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PGM-dE-WkL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfg-Gl-8J7">
@@ -424,8 +213,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="jupiter" image="jupiter"/>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="d4K-e6-QnA"/>
-                                    <segue destination="1q9-Io-l2S" kind="show" identifier="toJupiterSegue" id="hF5-g2-O5x"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cJ2-3Q-I1G"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEs-ku-aZA">
@@ -528,12 +316,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMu-dR-Q0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2608.125" y="1459.8591549295775"/>
+            <point key="canvasLocation" x="527" y="1276"/>
         </scene>
         <!--Planet Controller-->
         <scene sceneID="JxV-AK-Ydk">
             <objects>
-                <viewController id="ruE-we-U6b" customClass="planetController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ruE-we-U6b" customClass="PlanetController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqg-Yi-g9C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -553,42 +341,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="Rwm-kT-NLz"/>
                     <connections>
-                        <outlet property="sunView" destination="Mu7-4f-WYd" id="Eme-t0-l8D"/>
+                        <outlet property="planetView" destination="Mu7-4f-WYd" id="Eme-t0-l8D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNz-43-YeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1428.75" y="1459.8591549295775"/>
-        </scene>
-        <!--Merkurius Controller-->
-        <scene sceneID="frB-dN-IuE">
-            <objects>
-                <viewController id="qXA-eW-dTn" customClass="MerkuriusController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qPL-BY-maB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tj1-FF-HhV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="aJE-0n-fc6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="tj1-FF-HhV" firstAttribute="trailing" secondItem="aJE-0n-fc6" secondAttribute="trailing" id="KDn-Yz-LEu"/>
-                            <constraint firstItem="tj1-FF-HhV" firstAttribute="leading" secondItem="aJE-0n-fc6" secondAttribute="leading" id="Xfo-wz-Hzd"/>
-                            <constraint firstItem="tj1-FF-HhV" firstAttribute="top" secondItem="aJE-0n-fc6" secondAttribute="top" id="txm-c2-Sbl"/>
-                            <constraint firstItem="tj1-FF-HhV" firstAttribute="bottom" secondItem="aJE-0n-fc6" secondAttribute="bottom" id="uGg-It-q4O"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="whP-qG-AeV"/>
-                    <connections>
-                        <outlet property="sceneMerkurius" destination="tj1-FF-HhV" id="mqm-A0-plo"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HmY-Zz-9rA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-733.125" y="1459.8591549295775"/>
+            <point key="canvasLocation" x="1667" y="1277"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
