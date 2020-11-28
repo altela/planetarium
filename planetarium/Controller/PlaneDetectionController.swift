@@ -18,7 +18,7 @@ class PlaneDetectionController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    // Munculkan FeaturePoint Di Kamera
+    // Show FeaturePoint In Camera
         self.scenePlaneDetection.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
 
         scenePlaneDetection.delegate = self
@@ -26,13 +26,13 @@ class PlaneDetectionController: UIViewController, ARSCNViewDelegate {
         override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
 
-    // Atur Session Configuration Dengan ARWorldTrackingConfiguration Agar Objek Statis
+    // Set Session Configuration With ARWorldTrackingConfiguration To Be Able To Use World Tracking Feature
             let configuration = ARWorldTrackingConfiguration()
             
-    // Setup Agar Session Menggunakan Plane Detection Horizontal Surface
+    // Set Session For Horizontal Surface Plane Detection
             configuration.planeDetection = .horizontal
 
-    // Jalankan Session
+    // Run Session
             scenePlaneDetection.session.run(configuration)
         }
 
