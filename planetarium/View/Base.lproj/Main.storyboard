@@ -79,6 +79,14 @@
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl3-By-FgH">
+                                <rect key="frame" x="16" y="10" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="universeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="TaZ-c5-jIv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -123,6 +131,7 @@
                         <outlet property="toPlaneDetectionDemo" destination="oLt-Q7-IT8" id="KGs-d7-Ycr"/>
                         <outlet property="versionApp" destination="1S7-0j-3kY" id="krK-iv-uOb"/>
                         <segue destination="r8d-7v-6i7" kind="show" identifier="toPlaneDetectionSegue" id="Otl-Sl-IGV"/>
+                        <segue destination="omr-kb-sMA" kind="show" identifier="toUniverseSegue" id="gpF-xw-F8J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -292,6 +301,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1666.875" y="392.95774647887322"/>
+        </scene>
+        <!--Universe Controller-->
+        <scene sceneID="0dS-yI-1S5">
+            <objects>
+                <viewController id="omr-kb-sMA" customClass="UniverseController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d52-7u-t20">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fED-ga-S7Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ohq-0X-SxP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gwj-n4-6KZ"/>
+                    <connections>
+                        <outlet property="universeView" destination="fED-ga-S7Y" id="47y-Pe-QeJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jo-4g-0F9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459.375" y="1276.056338028169"/>
         </scene>
         <!--Plane Detection Controller-->
         <scene sceneID="G4x-Jx-5CZ">
