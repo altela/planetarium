@@ -38,24 +38,24 @@ struct PlanetDescription {
     ]
     
     let description = ["sun" :
-                            "Matahari (Sun)\nStruktur : Plasma Hydrogen & Helium\nSuhu : 5,505°C\nJarak Dari Bumi : 152.06 Juta Km\nRotasi : 27 Hari Bumi",
-                       "mercury" :
-                            "Merkurius (Mercury)\nStruktur : Besi\nSuhu : 427°C (Siang) -180°C (Malam)\nJarak Dari Bumi : 106.24 Juta Km\nRotasi : 59 Hari Bumi\nRevolusi : 88 Hari Bumi",
-                       "venus" :
-                            "Venus (Venus)\nStruktur : Besi Cair & Nickel\nSuhu : 460°C (Siang & Malam)\nJarak Dari Bumi : 72.536 Juta Km\nRotasi : 243 Hari Bumi\nRevolusi : 225 Hari Bumi",
-                       "earth" :
-                            "Bumi (Earth)\nStruktur : Batu Basalt & Granite\nSuhu : 14.6°C\nRotasi : 24 Jam\nRevolusi : 365 Hari + 1 (Kabisat)",
-                       "mars" :
-                            "Mars (Mars)\nStruktur : Nikel, Besi, Sulfur\nSuhu : 20°C (Siang) -73°C(Malam)\nJarak Dari Bumi : 110.76 Juta Km\nRotasi : 24.6 Jam Bumi\nRevolusi : 687 Hari Bumi",
-                       "jupiter" :
-                            "Jupiter (Jupiter)\nStruktur : Hydrogen & Helium\nSuhu : -145° Derajat Celcius\nJarak Dari Bumi : 620,42 Juta Km Dari Bumi\nRotasi : 9,84 Jam Waktu Bumi\nRevolusi : 4328 Hari Bumi",
-                       "saturn" :
-                            "Saturnus (Saturn)\nStruktur : Hydrogen & Helium\nSuhu : -178° Derajat Celcius\nJarak Dari Bumi : 1.3428 Milyar Km Dari Bumi\nRotasi : 10.8 Jam Waktu Bumi\nRevolusi : 10752 Hari Bumi",
-                       "uranus" :
-                            "Uranus (Uranus)\nStruktur : Air, Metana, Amonia\nSuhu : -224° Derajat Celcius\nJarak Dari Bumi : 2.98 Milyar Km Dari Bumi\nRotasi : 17.28 Jam Waktu Bumi\nRevolusi : 30,663 Hari Bumi",
-                       "neptune" :
-                            "Neptunus (Neptune)\nStruktur : Air, Metana, Amonia\nSuhu : -200° Derajat Celcius\nJarak Dari Bumi : 4.38 Milyar Km Dari Bumi\nRotasi : 16.08 Jam Waktu Bumi\nRevolusi : 60,148 Hari Bumi"
-                       
-                       
-    ]
+                        "Sun\nStructure : Plasma Hydrogen & Helium\nTemperature : 5,505°C\nDistance From Earth : 152.06 Million Km\nRotation : 27 Earth Days",
+                   "mercury" :
+                        "Mercury\nStructure : Iron\nTemperature : 427°C (Day) -180°C (Night)\nDistance From Earth : 106.24 Million Km\nRotation : 59 Earth Days\nRevolution : 88 Earth Days",
+                   "venus" :
+                        "Venus\nStructure : Liquid Iron & Nickel\nTemperature : 460°C (Day & Night)\nDistance From Earth : 72.536 Million Km\nRotation : 243 Earth Days\nRevolution : 225 Earth Days",
+                   "earth" :
+                        "Earth\nStructure : Basalt & Granite\nTemperature : 14.6°C\nRotation : 24 Jam\nRevolution : 365 Days + 1 (Leap Day)",
+                   "mars" :
+                        "Mars\nStructure : Nikel, Iron, Sulfur\nTemperature : 20°C (Day) -73°C(Night)\nDistance From Earth : 110.76 Million Km\nRotation : 24.6 Jam Bumi\nRevolution : 687 Earth Days",
+                   "jupiter" :
+                        "Jupiter\nStructure : Hydrogen & Helium\nTemperature : -145° Degree Celcius\nDistance From Earth : 620,42 Million Km From Earth\nRotation : 9,84 Earth Hours\nRevolution : 4328 Earth Days",
+                   "saturn" :
+                        "Saturn\nStructure : Hydrogen & Helium\nTemperature : -178° Degree Celcius\nDistance From Earth : 1.3428 Billion Km From Earth\nRotation : 10.8 Earth Hours\nRevolution : 10752 Earth Days",
+                   "uranus" :
+                        "Uranus\nStructure : Water, Metane, Amonia\nTemperature : -224° Degree Celcius\nDistance From Earth : 2.98 Billion Km From Earth\nRotation : 17.28 Earth Hours\nRevolution : 30,663 Earth Days",
+                   "neptune" :
+                        "Neptune\nStructure : Water, Metane, Amonia\nTemperature : -200° Degree Celcius\nDistance From Earth : 4.38 Billion Km From Earth\nRotation : 16.08 Earth Hours\nRevolution : 60,148 Earth Days"
+                   
+                   
+]
 }
