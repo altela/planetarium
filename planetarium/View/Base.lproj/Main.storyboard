@@ -293,7 +293,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="AR Menu" image="circle.bottomthird.split" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="showAR" destination="vX7-wo-pmh" id="4En-ms-mDS"/>
+                        <outlet property="showAR" destination="ETY-hX-vFU" id="Oq1-A1-Efe"/>
                         <outlet property="showUniverse" destination="D33-p4-Yis" id="ycu-oc-hLm"/>
                         <segue destination="ruE-we-U6b" kind="show" identifier="showARSegue" id="vR9-Ni-qHc"/>
                         <segue destination="0tO-pf-7pT" kind="show" identifier="toUniverseSegue" id="Wp1-B6-0LL"/>
