@@ -29,7 +29,7 @@ class PlanetController: UIViewController, ARSCNViewDelegate {
           // Text Material
           let text = planetModel.material
           let description = SCNText(string: planetDescription.description[choosenPlanet], extrusionDepth: 1)
-          text.diffuse.contents = UIImage(named: planetDescription.textures[choosenPlanet]!)
+          text.diffuse.contents = UIImage(named: planetModel.textures[choosenPlanet]!)
           description.materials = [text]
 
           // Sphere Material

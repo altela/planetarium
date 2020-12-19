@@ -79,14 +79,6 @@
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl3-By-FgH">
-                                <rect key="frame" x="16" y="10" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="universeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="TaZ-c5-jIv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -131,7 +123,6 @@
                         <outlet property="toPlaneDetectionDemo" destination="oLt-Q7-IT8" id="KGs-d7-Ycr"/>
                         <outlet property="versionApp" destination="1S7-0j-3kY" id="krK-iv-uOb"/>
                         <segue destination="r8d-7v-6i7" kind="show" identifier="toPlaneDetectionSegue" id="Otl-Sl-IGV"/>
-                        <segue destination="omr-kb-sMA" kind="show" identifier="toUniverseSegue" id="gpF-xw-F8J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -158,7 +149,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="MxJ-AH-zIP"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="hTu-VO-nGV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-hX-vFU">
@@ -288,44 +279,29 @@
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D33-p4-Yis">
+                                <rect key="frame" x="162" y="169" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="showUniverse"/>
+                                <connections>
+                                    <action selector="showUniverse:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Mjp-eM-zWG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AR Menu" image="circle.bottomthird.split" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="showAR" destination="NIM-rd-eVt" id="qiz-nt-0jZ"/>
+                        <outlet property="showAR" destination="vX7-wo-pmh" id="4En-ms-mDS"/>
+                        <outlet property="showUniverse" destination="D33-p4-Yis" id="ycu-oc-hLm"/>
                         <segue destination="ruE-we-U6b" kind="show" identifier="showARSegue" id="vR9-Ni-qHc"/>
+                        <segue destination="0tO-pf-7pT" kind="show" identifier="toUniverseSegue" id="Wp1-B6-0LL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1666.875" y="392.95774647887322"/>
-        </scene>
-        <!--Universe Controller-->
-        <scene sceneID="0dS-yI-1S5">
-            <objects>
-                <viewController id="omr-kb-sMA" customClass="UniverseController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d52-7u-t20">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fED-ga-S7Y">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </arscnView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ohq-0X-SxP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Gwj-n4-6KZ"/>
-                    <connections>
-                        <outlet property="universeView" destination="fED-ga-S7Y" id="47y-Pe-QeJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jo-4g-0F9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-459.375" y="1276.056338028169"/>
         </scene>
         <!--Plane Detection Controller-->
         <scene sceneID="G4x-Jx-5CZ">
@@ -381,6 +357,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNz-43-YeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1667" y="1277"/>
+        </scene>
+        <!--Universe Controller-->
+        <scene sceneID="lL1-EN-UPb">
+            <objects>
+                <viewController id="0tO-pf-7pT" customClass="UniverseController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9WO-a3-HTR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6GF-th-0CW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hv2-Ur-QNY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wUu-mW-AuS"/>
+                    <connections>
+                        <outlet property="universeView" destination="6GF-th-0CW" id="WnB-zK-Baa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9F6-Xi-k40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407.5" y="1275"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

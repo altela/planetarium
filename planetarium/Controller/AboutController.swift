@@ -27,13 +27,6 @@ class AboutController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    
-    @IBAction func universeButton(_ sender: UIButton) {
-        
-        performSegue(withIdentifier: "toUniverseSegue", sender: self)
-            print("Universe Button Pressed")
-    }
     
     @IBAction func toPlaneDetectionAction(_ sender: Any) {
         performSegue(withIdentifier: "toPlaneDetectionSegue", sender: self)
