@@ -21,31 +21,13 @@ struct DescriptionNodes{
     let scale = SCNVector3(0.008, 0.008, 0.01)
 }
 
-struct UniverseNodes {
-    let sun = SCNNode()
-    let sunPosition = SCNVector3(-0.3, 0.0, -0.7)
-
-    let mercury = SCNNode()
-    let mercuryPosition = SCNVector3(-0.9, 0.0, -0.7)
-    
-    let venus = SCNNode()
-    let venusPosition = SCNVector3(-1.1, 0.1, -0.7)
-
-    let earth = SCNNode()
-    let earthPosition = SCNVector3(-1.4, 0.1, -0.7)
-    
-    let mars = SCNNode()
-    let marsPosition = SCNVector3(-1.6, 0.1, -0.7)
-    
-    let jupiter = SCNNode()
-    let jupiterPosition = SCNVector3(-1.9, 0.1, -0.7)
-    
-    let saturn = SCNNode()
-    let saturnPosition = SCNVector3(-2.3, 0.1, -0.7)
-    
-    let uranus = SCNNode()
-    let uranusPosition = SCNVector3(-2.6, 0.1, -0.7)
-    
-    let neptune = SCNNode()
-    let neptunePosition = SCNVector3(-2.9, 0.1, -0.7)
+struct Universe {
+    let nodes = SCNNode()
+    let sunPosition = SCNVector3(-0.3, 0.1, -0.7)
+    let mercuryPosition = SCNVector3(-0.5, 0.3, -0.9)
+    let marsPosition = SCNVector3(-0.7, 0.5, -0.10)
+    let jupiterPosition = SCNVector3(-0.9, 0.7, -0.12)
+    let saturnPosition = SCNVector3(-0.12, 0.9, -0.14)
+    let uranusPosition = SCNVector3(-0.14, 0.11, -0.16)
+    let neptunePosition = SCNVector3(-0.16, 0.13, -0.18)
 }
