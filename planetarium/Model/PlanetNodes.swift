@@ -4,7 +4,7 @@
 //
 //  Created by Altela Pramardhika on 17/11/20.
 //  Copyright © 2020 projectflakes. All rights reserved.
-//
+//  Write for testing commits
 
 import UIKit
 import SceneKit
@@ -13,7 +13,6 @@ import ARKit
 struct PlanetNodes {
     let nodes = SCNNode()
     let position = SCNVector3(-0.3, 0.1, -0.7)
-    
 }
 
 struct DescriptionNodes{

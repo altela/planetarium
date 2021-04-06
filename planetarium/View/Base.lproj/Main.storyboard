@@ -149,7 +149,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="MxJ-AH-zIP"/>
+                                    <action selector="showAR:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="hTu-VO-nGV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-hX-vFU">
@@ -279,14 +279,24 @@
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D33-p4-Yis">
+                                <rect key="frame" x="162" y="169" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="showUniverse"/>
+                                <connections>
+                                    <action selector="showUniverse:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Mjp-eM-zWG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AR Menu" image="circle.bottomthird.split" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="showAR" destination="NIM-rd-eVt" id="qiz-nt-0jZ"/>
+                        <outlet property="showAR" destination="ETY-hX-vFU" id="Oq1-A1-Efe"/>
+                        <outlet property="showUniverse" destination="D33-p4-Yis" id="ycu-oc-hLm"/>
                         <segue destination="ruE-we-U6b" kind="show" identifier="showARSegue" id="vR9-Ni-qHc"/>
+                        <segue destination="0tO-pf-7pT" kind="show" identifier="toUniverseSegue" id="Wp1-B6-0LL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -347,6 +357,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNz-43-YeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1667" y="1277"/>
+        </scene>
+        <!--Universe Controller-->
+        <scene sceneID="lL1-EN-UPb">
+            <objects>
+                <viewController id="0tO-pf-7pT" customClass="UniverseController" customModule="planetarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9WO-a3-HTR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6GF-th-0CW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hv2-Ur-QNY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wUu-mW-AuS"/>
+                    <connections>
+                        <outlet property="universeView" destination="6GF-th-0CW" id="WnB-zK-Baa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9F6-Xi-k40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407.5" y="1275"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

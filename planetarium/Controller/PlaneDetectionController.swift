@@ -12,7 +12,7 @@ import Foundation
 
 class PlaneDetectionController: UIViewController, ARSCNViewDelegate {
     
-    // Koneksi Scene PlaneDetectionController Ke ViewController
+    // Connect PlaneDetectionController To ViewController
     @IBOutlet var scenePlaneDetection: ARSCNView!
 
     override func viewDidLoad() {

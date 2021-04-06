@@ -27,10 +27,10 @@ class AboutController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func toPlaneDetectionAction(_ sender: Any) {
         performSegue(withIdentifier: "toPlaneDetectionSegue", sender: self)
-            print("Tombol Plane Detection Trial Ditekan")
+            print("Plane Detection Button Pressed")
 }
     
     @IBAction func toExitAction(_ sender: UIButton) {
