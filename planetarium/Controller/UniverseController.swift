@@ -35,7 +35,7 @@ class UniverseController: UIViewController, ARSCNViewDelegate {
         sunShape.materials = [sunMaterial]
         sunMaterial.diffuse.contents = UIImage(named: planetModel.textures["sun"]!)
 
-        let sunSpawn = universeNode.sunNodes
+        let sunSpawn = universeNode.sunNode
         sunSpawn.position = universeNode.sunPosition
         sunSpawn.geometry = sunShape
         universeView.scene.rootNode.addChildNode(sunSpawn)
@@ -44,100 +44,98 @@ class UniverseController: UIViewController, ARSCNViewDelegate {
         // Mercury Shape & Nodes
         let mercuryShape = universeModel.mercurySphere
         let mercuryMaterial = universeModel.mercuryMaterial
-        sunShape.materials = [sunMaterial]
-        sunMaterial.diffuse.contents = UIImage(named: planetModel.textures["mercury"]!)
+        mercuryShape.materials = [mercuryMaterial]
+        mercuryMaterial.diffuse.contents = UIImage(named: planetModel.textures["mercury"]!)
 
-        let mercurySpawn = universeNode.mercuryNodes
+        let mercurySpawn = universeNode.mercuryNode
         mercurySpawn.position = universeNode.mercuryPosition
         mercurySpawn.geometry = mercuryShape
         universeView.scene.rootNode.addChildNode(mercurySpawn)
         universeView.autoenablesDefaultLighting = true
 
+        // Venus Shape & Nodes
+        let venusShape = universeModel.venusSphere
+        let venusMaterial = universeModel.venusMaterial
+        venusShape.materials = [venusMaterial]
+        venusMaterial.diffuse.contents = UIImage(named: planetModel.textures["venus"]!)
+
+        let venusSpawn = universeNode.venusNode
+        venusSpawn.position = universeNode.venusPosition
+        venusSpawn.geometry = venusShape
+        universeView.scene.rootNode.addChildNode(venusSpawn)
+        universeView.autoenablesDefaultLighting = true
         
-//
-//        // Venus Shape & Nodes
-//        let venusShape = universeModel.venusSphere
-//        let venusMaterial = universeModel.venusMaterial
-//        venusShape.materials = [venusMaterial]
-//        venusMaterial.diffuse.contents = UIImage(named: planetModel.textures["venus"]!)
-//
-//        let venusSpawn = universeNode.venus
-//        venusSpawn.position = universeNode.venusPosition
-//        venusSpawn.geometry = venusShape
-//        universeView.scene.rootNode.addChildNode(venusSpawn)
-//        universeView.autoenablesDefaultLighting = true
-//
-//        // Earth Shape & Nodes
-//        let earthShape = universeModel.earthSphere
-//        let earthMaterial = universeModel.earthMaterial
-//        earthShape.materials = [earthMaterial]
-//        earthMaterial.diffuse.contents = UIImage(named: planetModel.textures["earth"]!)
-//
-//        let earthSpawn = universeNode.earth
-//        earthSpawn.position = universeNode.earthPosition
-//        earthSpawn.geometry = earthShape
-//        universeView.scene.rootNode.addChildNode(earthSpawn)
-//        universeView.autoenablesDefaultLighting = true
-//
-//        // Mars Shape & Nodes
-//        let marsShape = universeModel.marsSphere
-//        let marsMaterial = universeModel.marsMaterial
-//        marsShape.materials = [marsMaterial]
-//        marsMaterial.diffuse.contents = UIImage(named: planetModel.textures["mars"]!)
-//
-//        let marsSpawn = universeNode.mars
-//        marsSpawn.position = universeNode.marsPosition
-//        marsSpawn.geometry = marsShape
-//        universeView.scene.rootNode.addChildNode(marsSpawn)
-//        universeView.autoenablesDefaultLighting = true
-//
-//        // Jupiter Shape & Nodes
-//        let jupiterShape = universeModel.jupiterSphere
-//        let jupiterMaterial = universeModel.jupiterMaterial
-//        jupiterShape.materials = [jupiterMaterial]
-//        jupiterMaterial.diffuse.contents = UIImage(named: planetModel.textures["jupiter"]!)
-//
-//        let jupiterSpawn = universeNode.jupiter
-//        jupiterSpawn.position = universeNode.jupiterPosition
-//        jupiterSpawn.geometry = jupiterShape
-//        universeView.scene.rootNode.addChildNode(jupiterSpawn)
-//        universeView.autoenablesDefaultLighting = true
-//
-//        // Saturn Shape & Nodes
-//        let saturnShape = universeModel.saturnSphere
-//        let saturnMaterial = universeModel.saturnMaterial
-//        saturnShape.materials = [saturnMaterial]
-//        saturnMaterial.diffuse.contents = UIImage(named: planetModel.textures["saturn"]!)
-//
-//        let saturnSpawn = universeNode.saturn
-//        saturnSpawn.position = universeNode.saturnPosition
-//        saturnSpawn.geometry = saturnShape
-//        universeView.scene.rootNode.addChildNode(saturnSpawn)
-//        universeView.autoenablesDefaultLighting = true
-//
-//        // Uranus Shape & Nodes
-//        let uranusShape = universeModel.uranusSphere
-//        let uranusMaterial = universeModel.uranusMaterial
-//        uranusShape.materials = [uranusMaterial]
-//        uranusMaterial.diffuse.contents = UIImage(named: planetModel.textures["uranus"]!)
-//
-//        let uranusSpawn = universeNode.uranus
-//        uranusSpawn.position = universeNode.uranusPosition
-//        uranusSpawn.geometry = uranusShape
-//        universeView.scene.rootNode.addChildNode(uranusSpawn)
-//        universeView.autoenablesDefaultLighting = true
-//
-//        // Neptune Shape & Nodes
-//        let neptuneShape = universeModel.neptuneSphere
-//        let neptuneMaterial = universeModel.neptuneMaterial
-//        neptuneShape.materials = [neptuneMaterial]
-//        neptuneMaterial.diffuse.contents = UIImage(named: planetModel.textures["neptune"]!)
-//
-//        let neptuneSpawn = universeNode.neptune
-//        neptuneSpawn.position = universeNode.neptunePosition
-//        neptuneSpawn.geometry = neptuneShape
-//        universeView.scene.rootNode.addChildNode(neptuneSpawn)
-//        universeView.autoenablesDefaultLighting = true
+        // Earth Shape & Nodes
+        let earthShape = universeModel.earthSphere
+        let earthMaterial = universeModel.earthMaterial
+        earthShape.materials = [earthMaterial]
+        earthMaterial.diffuse.contents = UIImage(named: planetModel.textures["earth"]!)
+
+        let earthSpawn = universeNode.earthNode
+        earthSpawn.position = universeNode.earthPosition
+        earthSpawn.geometry = earthShape
+        universeView.scene.rootNode.addChildNode(earthSpawn)
+        universeView.autoenablesDefaultLighting = true
+        
+        // Mars Shape & Nodes
+        let marsShape = universeModel.marsSphere
+        let marsMaterial = universeModel.marsMaterial
+        marsShape.materials = [marsMaterial]
+        marsMaterial.diffuse.contents = UIImage(named: planetModel.textures["mars"]!)
+
+        let marsSpawn = universeNode.marsNode
+        marsSpawn.position = universeNode.marsPosition
+        marsSpawn.geometry = marsShape
+        universeView.scene.rootNode.addChildNode(marsSpawn)
+        universeView.autoenablesDefaultLighting = true
+
+        // Jupiter Shape & Nodes
+        let jupiterShape = universeModel.jupiterSphere
+        let jupiterMaterial = universeModel.jupiterMaterial
+        jupiterShape.materials = [jupiterMaterial]
+        jupiterMaterial.diffuse.contents = UIImage(named: planetModel.textures["jupiter"]!)
+
+        let jupiterSpawn = universeNode.jupiterNode
+        jupiterSpawn.position = universeNode.jupiterPosition
+        jupiterSpawn.geometry = jupiterShape
+        universeView.scene.rootNode.addChildNode(jupiterSpawn)
+        universeView.autoenablesDefaultLighting = true
+        
+        // Saturn Shape & Nodes
+        let saturnShape = universeModel.saturnSphere
+        let saturnMaterial = universeModel.saturnMaterial
+        saturnShape.materials = [saturnMaterial]
+        saturnMaterial.diffuse.contents = UIImage(named: planetModel.textures["saturn"]!)
+
+        let saturnSpawn = universeNode.saturnNode
+        saturnSpawn.position = universeNode.saturnPosition
+        saturnSpawn.geometry = saturnShape
+        universeView.scene.rootNode.addChildNode(saturnSpawn)
+        universeView.autoenablesDefaultLighting = true
+        
+        // Uranus Shape & Nodes
+        let uranusShape = universeModel.uranusSphere
+        let uranusMaterial = universeModel.uranusMaterial
+        uranusShape.materials = [uranusMaterial]
+        uranusMaterial.diffuse.contents = UIImage(named: planetModel.textures["uranus"]!)
+
+        let uranusSpawn = universeNode.uranusNode
+        uranusSpawn.position = universeNode.uranusPosition
+        uranusSpawn.geometry = uranusShape
+        universeView.scene.rootNode.addChildNode(uranusSpawn)
+        universeView.autoenablesDefaultLighting = true
+        
+        // Neptune Shape & Nodes
+        let neptuneShape = universeModel.neptuneSphere
+        let neptuneMaterial = universeModel.neptuneMaterial
+        neptuneShape.materials = [neptuneMaterial]
+        neptuneMaterial.diffuse.contents = UIImage(named: planetModel.textures["neptune"]!)
+
+        let neptuneSpawn = universeNode.neptuneNode
+        neptuneSpawn.position = universeNode.neptunePosition
+        neptuneSpawn.geometry = neptuneShape
+        universeView.scene.rootNode.addChildNode(neptuneSpawn)
+        universeView.autoenablesDefaultLighting = true
         
         // Set Session Configuration With ARWorldTrackingConfiguration To Be Able To Use World Tracking Feature
         let configuration = ARWorldTrackingConfiguration()
