@@ -22,8 +22,6 @@ class PlanetController: UIViewController, ARSCNViewDelegate {
      
      override func viewDidLoad() {
          super.viewDidLoad()
-         
-
          planetView.delegate = self
          
          // Text Material
@@ -61,12 +59,11 @@ class PlanetController: UIViewController, ARSCNViewDelegate {
             ringMaterial.diffuse.contents = UIImage(named: planetModel.textures["saturn"]!)
             
             let ringSpawn = planetNodes.ring
-            planetSpawn.rotation = SCNVector4(x: 10, y: 10, z: 10, w: 6)
+            planetSpawn.rotation = planetNodes.saturnRotate
             ringSpawn.position = planetNodes.saturnRingPosition
             ringSpawn.geometry = ringShape
-            ringSpawn.rotation = SCNVector4(x: 10, y: 10, z: 10, w: 6)
+            ringSpawn.rotation = planetNodes.saturnRotate
             planetView.scene.rootNode.addChildNode(ringSpawn)
-            
             
         } else if choosenPlanet == "uranus" {
             let ringShape = planetModel.uranusRing
@@ -77,7 +74,7 @@ class PlanetController: UIViewController, ARSCNViewDelegate {
             let ringSpawn = planetNodes.ring
             ringSpawn.position = planetNodes.uranusRingPosition
             ringSpawn.geometry = ringShape
-            ringSpawn.rotation = SCNVector4(x: 10, y: 10, z: 10, w: 10)
+            ringSpawn.rotation = planetNodes.uranusRingRotate
             planetView.scene.rootNode.addChildNode(ringSpawn)
             
         }
