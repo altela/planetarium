@@ -10,8 +10,8 @@ It's simply use `ARKit` framwork to run `ARWorldTrackingConfiguration` to displa
 
 Note : if you run on a device lower than A9 chip, you should change `ARWorldTrackingConfiguration` to `ARSessionConfiguration`
 
-# How To Download The Project
-Simply fork the repo and clone to your computer using XCode interface or you can do it manually by typing `git clone https://github.com/Altela/planetarium`. 
+# Clone The Project
+Simply fork the repo first and clone to your computer using XCode interface or you can do it manually by typing `git clone https://github.com/Altela/planetarium`. 
 Then open `.xcodeproj` to see the project.
 
 <img src="https://github.com/Altela/planetarium/blob/master/gif/planetarium1.gif" width="500" height="800">
