@@ -101,7 +101,7 @@ class UniverseController: UIViewController, ARSCNViewDelegate {
         universeView.scene.rootNode.addChildNode(jupiterSpawn)
         universeView.autoenablesDefaultLighting = true
         
-        // Saturn Shape & Nodes
+        // Saturn Shape, Ring & Nodes
         let saturnShape = universeModel.saturnSphere
         let saturnMaterial = universeModel.saturnMaterial
         saturnShape.materials = [saturnMaterial]
@@ -110,7 +110,20 @@ class UniverseController: UIViewController, ARSCNViewDelegate {
         let saturnSpawn = universeNode.saturnNode
         saturnSpawn.position = universeNode.saturnPosition
         saturnSpawn.geometry = saturnShape
+        saturnSpawn.rotation = universeNode.saturnRotate
+        
+        let saturnRing = universeModel.saturnRing
+        let saturnRingMaterial = universeModel.saturnMaterial
+        saturnRing.materials = [saturnRingMaterial]
+        saturnRingMaterial.diffuse.contents = UIImage(named: planetModel.textures["saturn"]!)
+        
+        let saturnRingSpawn = universeNode.saturnRingNode
+        saturnRingSpawn.position = universeNode.saturnRingPosition
+        saturnRingSpawn.geometry = saturnRing
+        saturnRingSpawn.rotation = universeNode.saturnRotate
+        
         universeView.scene.rootNode.addChildNode(saturnSpawn)
+        universeView.scene.rootNode.addChildNode(saturnRingSpawn)
         universeView.autoenablesDefaultLighting = true
         
         // Uranus Shape & Nodes
@@ -124,6 +137,18 @@ class UniverseController: UIViewController, ARSCNViewDelegate {
         uranusSpawn.geometry = uranusShape
         universeView.scene.rootNode.addChildNode(uranusSpawn)
         universeView.autoenablesDefaultLighting = true
+        
+        let uranusRing = universeModel.uranusRing
+        let uranusRingMaterial = universeModel.uranusMaterial
+        uranusRing.materials = [uranusRingMaterial]
+        uranusRingMaterial.diffuse.contents = UIImage(named: planetModel.textures["uranus"]!)
+        
+        let uranusRingSpawn = universeNode.uranusRingNode
+        uranusRingSpawn.position = universeNode.uranusRingPosition
+        uranusRingSpawn.geometry = uranusRing
+        uranusRingSpawn.rotation = universeNode.uranusRingRotate
+        
+        universeView.scene.rootNode.addChildNode(uranusRingSpawn)
         
         // Neptune Shape & Nodes
         let neptuneShape = universeModel.neptuneSphere
