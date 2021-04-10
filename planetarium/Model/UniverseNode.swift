@@ -30,11 +30,17 @@ struct UniverseNode {
     let jupiterPosition = SCNVector3(-0.4, 0.0, -0.9)
     
     let saturnNode = SCNNode()
+    let saturnRingNode = SCNNode()
     let saturnPosition = SCNVector3(-0.8, 0.0, -0.9)
+    let saturnRingPosition = SCNVector3(-0.8, 0.0, -0.9)
+    let saturnRotate = SCNVector4(x: 10, y: 10, z: 10, w: 6)
     
     let uranusNode = SCNNode()
-    let uranusPosition = SCNVector3(-1.2, 0.0, -0.9)
+    let uranusRingNode = SCNNode()
+    let uranusPosition = SCNVector3(-1.4, 0.0, -0.9)
+    let uranusRingPosition = SCNVector3(-1.4, 0.0, -0.9)
+    let uranusRingRotate = SCNVector4(x: 10, y: 10, z: 10, w: 10)
     
     let neptuneNode = SCNNode()
-    let neptunePosition = SCNVector3(-1.6, 0.0, -0.9)
+    let neptunePosition = SCNVector3(-1.8, 0.0, -0.9)
 }

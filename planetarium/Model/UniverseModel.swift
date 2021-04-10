@@ -23,9 +23,11 @@ struct UniverseModel {
 
     let saturnSphere = SCNSphere(radius:0.12)
     let saturnMaterial = SCNMaterial()
+    let saturnRing = SCNTube(innerRadius: 0.16, outerRadius: 0.21, height: 0.01)
 
     let uranusSphere = SCNSphere(radius:0.11)
     let uranusMaterial = SCNMaterial()
+    let uranusRing = SCNTube(innerRadius: 0.16, outerRadius: 0.21, height: 0.01)
 
     let neptuneSphere = SCNSphere(radius:0.11)
     let neptuneMaterial = SCNMaterial()
