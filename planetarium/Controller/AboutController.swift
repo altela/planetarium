@@ -19,7 +19,7 @@ class AboutController: UIViewController {
     
     @IBOutlet weak var versionApp: UILabel!
     
-    @IBOutlet weak var toPlaneDetectionDemo: UIButton!
+    @IBOutlet weak var toPlaneDetect: UIButton!
     
     @IBOutlet weak var toExit: UIButton!
     

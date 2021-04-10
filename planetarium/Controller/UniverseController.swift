@@ -140,6 +140,7 @@ class UniverseController: UIViewController, ARSCNViewDelegate {
         // Set Session Configuration With ARWorldTrackingConfiguration To Be Able To Use World Tracking Feature
         let configuration = ARWorldTrackingConfiguration()
         
+        
         // Set Session For Horizontal Surface Plane Detection
         configuration.planeDetection = .horizontal
 

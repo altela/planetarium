@@ -10,8 +10,6 @@ import UIKit
 
 class ARMenuController: UIViewController {
 
-    @IBOutlet weak var showAR: UIButton!
-
     @IBOutlet weak var showUniverse: UIButton!
     
     override func viewDidLoad() {
