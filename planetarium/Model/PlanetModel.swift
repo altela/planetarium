@@ -11,6 +11,8 @@ import ARKit
 
 struct PlanetModel {
     let sphere = SCNSphere(radius:0.2)
+    let saturnRing = SCNTube(innerRadius: 0.25, outerRadius: 0.4, height: 0.01)
+    let uranusRing = SCNTube(innerRadius: 0.25, outerRadius: 0.4, height: 0.01)
     let material = SCNMaterial()
     let textures = ["sun" : "textures.scnassets/sun.jpg",
                     "mercury" : "textures.scnassets/mercury.jpg",

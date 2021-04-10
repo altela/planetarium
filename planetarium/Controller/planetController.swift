@@ -52,6 +52,36 @@ class PlanetController: UIViewController, ARSCNViewDelegate {
          planetSpawn.geometry = shape
          planetView.scene.rootNode.addChildNode(planetSpawn)
          planetView.autoenablesDefaultLighting = true
+        
+        // SPECIAL CASE : If Saturnus is Choosen, show ring
+        if choosenPlanet == "saturn" {
+            let ringShape = planetModel.saturnRing
+            let ringMaterial = planetModel.material
+            ringShape.materials = [material]
+            ringMaterial.diffuse.contents = UIImage(named: planetModel.textures["saturn"]!)
+            
+            let ringSpawn = planetNodes.ring
+            planetSpawn.rotation = SCNVector4(x: 10, y: 10, z: 10, w: 6)
+            ringSpawn.position = planetNodes.saturnRingPosition
+            ringSpawn.geometry = ringShape
+            ringSpawn.rotation = SCNVector4(x: 10, y: 10, z: 10, w: 6)
+            planetView.scene.rootNode.addChildNode(ringSpawn)
+            
+            
+        } else if choosenPlanet == "uranus" {
+            let ringShape = planetModel.uranusRing
+            let ringMaterial = planetModel.material
+            ringShape.materials = [material]
+            ringMaterial.diffuse.contents = UIImage(named: planetModel.textures["uranus"]!)
+            
+            let ringSpawn = planetNodes.ring
+            ringSpawn.position = planetNodes.uranusRingPosition
+            ringSpawn.geometry = ringShape
+            ringSpawn.rotation = SCNVector4(x: 10, y: 10, z: 10, w: 10)
+            planetView.scene.rootNode.addChildNode(ringSpawn)
+            
+        }
+        
      }
      
      override func viewWillAppear(_ animated: Bool) {

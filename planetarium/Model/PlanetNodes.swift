@@ -12,6 +12,9 @@ import ARKit
 
 struct PlanetNodes {
     let nodes = SCNNode()
+    let ring = SCNNode()
+    let saturnRingPosition = SCNVector3(-0.3, 0.1, -0.7)
+    let uranusRingPosition = SCNVector3(-0.3, 0.1, -0.7)
     let position = SCNVector3(-0.3, 0.1, -0.7)
 }
 
