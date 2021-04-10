@@ -4,11 +4,6 @@
 //
 //  Created by Altela Pramardhika on 17/11/20.
 //  Copyright © 2020 projectflakes. All rights reserved.
-<<<<<<< HEAD
-// Testing commit
-=======
-// Testing
->>>>>>> origin/master
 
 import UIKit
 import SceneKit
