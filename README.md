@@ -10,6 +10,7 @@ It's simply use `ARKit` framwork to run `ARWorldTrackingConfiguration` to displa
 
 Note : if you run on a device lower than A9 chip, you should change `ARWorldTrackingConfiguration` to `ARSessionConfiguration`
 
+
 # Copyright
 This project are under MIT License.
 
@@ -18,6 +19,9 @@ Background are made by [Bledgesteam](https://www.walpaperlist.com/2020/01/black-
 
 # How To Download The Project
 Simply fork the repo and clone to your computer using XCode interface or you can do it manually by typing `git clone https://github.com/Altela/planetarium`. 
+
+# Clone The Project
+Simply fork the repo first and clone to your computer using XCode interface or you can do it manually by typing `git clone https://github.com/Altela/planetarium`. 
 Then open `.xcodeproj` to see the project.
 
 If you want to contribute and make changes, simply make a pull request and let me know so i can review it.
