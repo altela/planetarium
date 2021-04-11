@@ -29,10 +29,10 @@ If you want to contribute and make changes, simply make a pull request and let m
 # Preview
 
 Main Menu : 
-<img src="https://github.com/Altela/planetarium/blob/master/gif/planetarium1.png" width="500" height="800">
+<img src="https://github.com/Altela/planetarium/blob/master/gif/mainmenu.jpg" width="500" height="800">
 
 Planet Menu : 
-<img src="https://github.com/Altela/planetarium/blob/master/gif/planetarium2.png" width="500" height="800">
+<img src="https://github.com/Altela/planetarium/blob/master/gif/arMenu.jpg" width="500" height="800">
 
 Note : If you pressed `The Universe` it will show entire planet in one AR session.
 
