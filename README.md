@@ -17,9 +17,6 @@ This project are under MIT License.
 Icons are made by [Iconika Store](https://iconscout.com/contributors/iconika)
 Background are made by [Bledgesteam](https://www.walpaperlist.com/2020/01/black-screen-with-stars.html)
 
-# How To Download The Project
-Simply fork the repo and clone to your computer using XCode interface or you can do it manually by typing `git clone https://github.com/Altela/planetarium`. 
-
 # Clone The Project
 Simply fork the repo first and clone to your computer using XCode interface or you can do it manually by typing `git clone https://github.com/Altela/planetarium`. 
 Then open `.xcodeproj` to see the project.
